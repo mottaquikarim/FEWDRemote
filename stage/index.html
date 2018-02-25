@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Loading...</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/mottaquikarim/JavaScriptDevelopmentRemote/master/assets/ga_ico.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/reveal.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/theme/white.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/monokai-sublime.css">
+		
+		<style>
+			.reveal { font-family: 'Roboto', sans-serif; }
+			.reveal h1,
+			.reveal h2,
+			.reveal h3,
+			.reveal h4,
+			.reveal h5,
+			.reveal h6 {
+				margin: 0 0 20px 0;
+				font-weight: 900;
+				font-family: 'Roboto', sans-serif;
+				line-height: 0.9em;
+				letter-spacing: 0.02em;
+				text-transform: uppercase;
+				text-shadow: none; }
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="" data-separator="^---" data-separator-vertical="^\n-\n"></section>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/lib/js/head.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/js/reveal.min.js"></script>
+		<script>
+			const getHashDict = () => {
+				const hashstr = window.location.search.substr(1);
+				const hasharr = hashstr.split('&')
+				return hasharr.reduce((hash, arg) => {
+					const bits = arg.split('=')
+					hash[bits[0]] = bits[1]
+					return hash;
+				}, {});
+			};
+			
+			const fetchLecture = hashdict => {
+				title = document.querySelector('title');
+				const lecture = hashdict['lecture']
+				if (!lecture) {
+					title.innerHTML = `✋ Failed To Load`
+					alert('✋ Sorry, the "lecture" query param was not found, slides will not load.')
+					return;	
+				}
+
+				const url = `https://raw.githubusercontent.com/mottaquikarim/JavaScriptDevelopmentRemote/master/Lecture_${lecture}/README.md`
+
+				const reveal = document.querySelector('.reveal section')
+				if (!reveal) {
+					title.innerHTML = `✋ Failed To Load`
+					alert('✋ Sorry, could not find proper container for slideshow, slides will not load.')
+					return;
+				}
+
+				title.innerHTML = `🙌 Lecture ${lecture} 🙌`
+				reveal.setAttribute('data-markdown', url);
+				Reveal.initialize({
+					history: true,
+					dependencies: [
+						{ src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					]	
+				});
+			};
+			
+			// init 
+			fetchLecture(getHashDict());
+		</script>
+	</body>
+</html>
