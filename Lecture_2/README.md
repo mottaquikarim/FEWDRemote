@@ -83,12 +83,24 @@ Your typical HTML file will look like this:
 -
 
 #### Key components
+
+-
+
 **`<!doctype html>`**
 This tag tells the browser to read our HTML content as HTML5, the latest and greatest revision of the HTML spec. We MUST include it as the first thing on our .html files. I usually type it as all lower case, but it's common practice to also type as: <!DOCTYPE html>
+
+-
+
 **`<html>`**
 This is the root tag. Basically, all other tags in your html file must live inside this tag. Note how on the bottom of the code snippet, we have a "". This is called closing a tag and we must close all tags that we open (with the exception of a few). If we do not do this, our HTML markup becomes invalid.
+
+-
+
 **`<head>`**
 This section contains content that does not show the user things. Typically, we would expect to see things such as the page title, external links, and SEO tags here.
+
+-
+
 **`<body>`**
 All the magic happens here. All the tags the user interacts with should live in this tag.
 
