@@ -1,0 +1,11 @@
+/*LOL this is a comment in css fam*/
+
+
+/* in css search queries are called SELECTORS*/
+li { /* this is the simplest search query, the TAG selector */
+	color: red; /* this is a css RULE */
+}
+
+a {
+	color: red;
+}
