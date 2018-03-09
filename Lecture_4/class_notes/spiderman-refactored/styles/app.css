@@ -1,0 +1,144 @@
+/*LOL this is a comment in css fam*/
+
+
+/* in css search queries are called SELECTORS*/
+ol li {
+	color: blue;
+}
+
+ul {
+	border: 1px solid black;
+}
+
+.topnav {
+	list-style: none;
+	padding-left: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.topnav-link {
+	display: inline-block;
+	border-right: 1px solid red;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.topnav-link-no-rightborder {
+	border-right: none;
+}
+
+.topnav-link-active {
+	color: black;
+	font-weight: bolder;
+}
+
+.topnav-link:not(.topnav-link-active):hover {
+	text-decoration: underline;
+}
+
+ul li ul li {
+	color: pink;
+}
+
+li { /* this is the simplest search query, the TAGname selector */
+	color: red; /* this is a css RULE */
+}
+
+a {
+	color: red;
+}
+
+.emph { /* classname selectors */
+	font-weight: bolder;
+	font-size: 32px;
+}
+
+p {
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+.block-title {
+	border-bottom: 5px solid black;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.block-collapse {
+	float: right;
+}
+
+.subblock-title {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: Helvetica;
+	color: green;
+}
+
+.subblock-title.subblock-title-important {
+	color: red;
+}
+
+/*
+CSS SELECTORS:
+
+	there are three ways to select stuff in css:
+		- by tagname (ie: li, ul, etc)
+		- by classname (ie: .emph, .subblock-title, etc)
+		- by idname (ie: #foobar, #taq, etc) -- NOTE: THIS IS EVIL, USE AT YOUR OWN RISK;
+
+	we can mix and match css selectors to perform increasingly
+	specific queries
+
+	EXAMPLES:
+	ul li {
+		// find first ALL ULs in page, THEN find all LIs inside of those ULs
+	}
+
+	ul li ul li {
+		// find all ULs in page, then find all LIs then find ALL ULs in those LIs
+		// then find all LIs in those ULs
+	}
+
+	.classname {
+		// select by classname
+	}
+
+	<p class="class1 class2"></p>
+	^ add two classes to the same <p> tag
+
+	.class1 {
+		// style all elements with class1
+	}
+
+	.class2 {
+		// style all elements with class2
+	}
+
+	.class1.class2 {
+		// style ONLY elements that have class1 AND class2
+	}
+
+	p.class1 {
+		// style ONLY p tags that have class2
+	}
+
+	<h1>
+		<p class="class1 class2"></p>
+	</h1>
+
+	h1 .class1 {
+		// FIRST select all h1s THEN select all elements INSIDE those h1s with class1
+	}
+*/
+
+
+
+
+
+
+
+
+
