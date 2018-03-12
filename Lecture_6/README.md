@@ -1,28 +1,32 @@
-# Lecture 6: The Box Model
+# Lecture 6: Grids
 
 -
 
 Stacks on stacks on stacks, fam
+
 ![asdfas](https://media2.giphy.com/media/y4tJKfZD2r2Za/giphy.gif)
 
 -
 
-## Learning Objectives
+## Objectives
 1. Explore CSS's box model
 2. Understand the difference between margin/border/padding
+3. Begin building complex grids with CSS
 
 -
 
-## To Do List
+## Agenda
 1. ### [Warmup](#warmup)
 2. ### [The Box Model](#the-box-model)
 3. ### [Practical CSS3 Usecases](#practical-css3-usecases)
+
 ---
-# Warmup
+
+## Warmup
 
 -
 
-For the following two images - **with a partner** - on your desk, draw out the **HTML divs/sections** you would have to use to create that layout.
+For the following two images - **with a partner** - on your screen, draw out the **HTML divs/sections** you would have to use to create that layout.
 
 -
 
@@ -39,8 +43,9 @@ For the following two images - **with a partner** - on your desk, draw out the *
 #### [Wistia](https://wistia.com/account/signup)
 <p></p>
 <img src="http://cdn2.hubspot.net/hub/53/hubfs/wisita-landing-page-example.png?noresize&t=1468231454139&width=660" style="width: 100%;">
+
 ---
-# The Box Model
+## The Box Model
 
 -
 
@@ -73,8 +78,69 @@ The widths adding up to 100% isn't enough -- the **width** + **padding** + **bor
 #### Box Sizing
 This is a useful tool. We can use box-sizing to force the padding to be **pulled into** our content width. This way, padding is **not** added to the overall width.
 **Types**: content-box, border-box
+
 ---
-# Practical CSS3 Usecases
+
+## Flexbox
+
+👇👇👇
+
+-
+
+The flex layout is a series of CSS properties that allows the **container** element to alter the dimensions of its **children** elements. A flex container will expand items to fill available space if there is any and shrink them to avoid overflow.
+
+-
+
+Consider the following image
+
+![img](https://cdn.css-tricks.com/wp-content/uploads/2011/08/flexbox.png)
+
+_[source](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)_
+
+-
+
+### [Basic Example](http://samantha.fewd.us/#broadcast/mottaquikarim/flex-example)
+
+-
+
+### Flex basis, width, grow, shrink
+
+* If no flex-basis specified, we fall back to width
+* flex-basis is the **default** size the browser tries to draw the columns to
+* if flex-basis width can be respected **and** items will fit in container, 👍
+* else, it will rely on **flex-grow** or **flex-shrink** to determine how to layout the items
+	* flex-grow/shrink of **0** means do not grow
+	* **1** means same size
+	* **2** is twice relative to the others, etc
+
+-
+
+### justify-content/align-items
+
+* how to align horizontally: **justify-content**. apply on container
+* vertically: **align-items**. apply on container
+
+**NOTE**: there is an **align-self** that can be applied to individual items in flex container
+
+-
+
+More info:
+
+* **[CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)**
+* **[geddski](http://gedd.ski/post/the-difference-between-width-and-flex-basis/)**
+
+-
+
+### Exercises
+
+1. ### Simple Flex: [Basic Practice](http://samantha.fewd.us/#/fork/mottaquikarim/flex-grid-ex) | [Live Notes](http://samantha.fewd.us/#/broadcast/mottaquikarim/flex-grid-ex)
+2. ### Simple Flex 2: [Basic Practice](http://samantha.fewd.us/#/fork/mottaquikarim/flex-grid-ex-2) | [Live Notes](http://samantha.fewd.us/#/broadcast/mottaquikarim/flex-grid-ex-2)
+3. ### Simple Flex 3: [Basic Practice](http://samantha.fewd.us/#fork/mottaquikarim/flex-grid-ex-3) | [Live Notes](http://samantha.fewd.us/#/broadcast/mottaquikarim/flex-grid-ex-3)
+4. ### Simple Flex 4: [Basic Practice](http://samantha.fewd.us/#fork/mottaquikarim/flex-grid-ex-4) | [Live Notes](http://samantha.fewd.us/#/broadcast/mottaquikarim/flex-grid-ex-4)
+
+
+---
+## Practical CSS3 Usecases
 
 -
 
