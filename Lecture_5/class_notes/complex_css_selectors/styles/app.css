@@ -1,0 +1,13 @@
+p { /* tagname selector */
+	color: red;
+}
+
+p.tagged2 {
+	color: yellow;
+}
+
+
+.tagged { /* classname selector */
+	color: green;
+	border: 1px solid black;
+}

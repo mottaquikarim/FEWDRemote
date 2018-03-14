@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/app.css">
+	</head>
+	<body>
+		<!-- 
+		- select each item with the class 'tagged' and set it's CSS value to whatever 
+		  is specified in the data-cssVal attribute
+		- you CANNOT modify the markup
+		- you must (somehow) target all the HTML elements purely with CSS selectors
+		 -->
+
+		<div class="my-body">
+			<div class="item-one">
+				<p class="tagged tagged2" data-cssVal="color: red;">Lorem ipsum dolor sit amet, 
+				consectetur adipiscing elit. Morbi eu tortor congue, 
+				<span>
+					<b class="tagged2">
+						accumsan
+					</b>
+				</span> sem convallis, 
+				cursus erat. <span>Integer</span> vitae nisi metus. Integer volutpat porta justo, vel dictum justo pharetra a. </p>
+
+				<p>Ut ultricies dignissim ante, a lobortis nisi congue nec. Maecenas viverra 
+				<b class="tagged2">
+					accumsan
+				</b>
+				tortor vel diam tincidunt pulvinar. Sed ut massa turpis. </p>
+
+				<p class="tagged" data-cssVal="color: red;">Pellentesque rhoncus augue eget 
+				aliquam tincidunt. Nam laoreet dapibus sem, nec mollis urna varius non. Nam 
+				non mi enim. Duis ultricies mi in nunc ultrices egestas. Morbi dignissim gravida ornare.</p>
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tortor congue, accumsan sem 
+				convallis, cursus erat. <span class="tagged" data-cssVal="color: green;">Integer vitae nisi metus.</span> 
+				Integer volutpat porta justo, vel dictum justo pharetra a. Ut ultricies dignissim ante, <span>a lobortis 
+				nisi congue nec. Maecenas viverra tortor vel diam tincidunt pulvinar. Sed ut massa turpis.</span> 
+				<span>Pellentesque rhoncus augue</span> eget aliquam tincidunt. Nam laoreet dapibus sem, nec mollis urna 
+				varius non. Nam non mi enim. 
+				Duis ultricies mi in nunc ultrices egestas. Morbi dignissim gravida ornare.</p>
+			</div>
+			<ul class="ul-1">
+				<li>Test</li>
+				<li class="tagged" data-cssVal="border: 5px solid green;">Test1</li>
+				<li>Test</li>
+				<li>Test</li>
+				<li class="tagged" data-cssVal="border: 5px solid green;">Test2</li>
+				<li>
+					<ul>
+						<li class="tagged" data-cssVal="border: 5px solid green;">Test3</li>
+						<li>Test</li>
+						<li>Test</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="ul-1">
+				<li>Test</li>
+				<li class="tagged" data-cssVal="border: 1px solid red;">Test</li>
+				<li>Test</li>
+				<li>Test</li>
+				<li>Test</li>
+				<li>Test</li>
+			</ul>
+		</div>
+	</body>
+</html>
