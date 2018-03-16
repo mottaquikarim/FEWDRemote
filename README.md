@@ -22,7 +22,7 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 5: CSS and Hwk Review](Lecture_5) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=5#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_5/class_notes)
         	
-### [Lecture 6: Grids I](Lecture_6) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=6#/)
+### [Lecture 6: Grids I](Lecture_6) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=6#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_6/class_notes)
         	
 ### [Lecture 7: Grid Practice](Lecture_7) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=7#/)
 
