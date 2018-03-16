@@ -1,0 +1,35 @@
+.block-item {
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+
+	padding: 10px;
+
+	margin: 10px;
+
+}
+
+.inline-block-elements .block-item {
+	display: inline-block;
+}
+
+.inline-block-elements-with-box-sizing .block-item {
+	box-sizing: border-box;
+	width: 45%;
+	display: inline-block;
+}
+
+.inline-block-elements-with-box-sizing-layout .block-item {
+	box-sizing: border-box;
+	width: 50%;
+	display: inline-block;	
+	margin: 0;
+}
+
+.inline-block-elements-with-box-sizing-layout-margins .block-item {
+	box-sizing: border-box;
+	width: 30%;
+	display: inline-block;	
+	margin: 10%;
+}

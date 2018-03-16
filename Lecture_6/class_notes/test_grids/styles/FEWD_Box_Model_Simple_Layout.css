@@ -1,0 +1,37 @@
+.devmode .col {
+	background-color: pink;
+	height: 30px;
+}
+
+.devmode .col-one-half {
+	display: inline-block;
+	background-color: yellow;
+	height: 90px;
+	width: calc(50% - 5px);
+	margin-right: 5px;
+}
+
+.devmode .col-last {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+.ex2 .col {
+	background-color: pink;
+	height: 30px;
+}
+
+.ex2 .col-one-half {
+	display: inline-block;
+	background-color: yellow;
+	height: 90px;
+	width: 50%;
+
+	box-sizing: border-box;
+	border-right: 5px solid white;
+}
+
+.ex2 .col-last {
+	border-left: 5px solid white;
+	border-right: 0;
+}

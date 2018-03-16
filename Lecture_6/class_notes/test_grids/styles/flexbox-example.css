@@ -1,0 +1,65 @@
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+	height: 30px;
+	background-color: pink;
+	flex-basis: 100%;
+}
+
+.col-one-half {
+	height: 90px;
+	background-color: yellow;
+	flex-basis: calc(50% - 5px);
+	margin-right: 5px;
+}
+
+.col-no-margin {
+	margin-right: 0;
+	flex-basis: 50%;
+	border: 1px solid black;
+	box-sizing: border-box;
+	background-color: yellow;
+}
+
+.col-last {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.col-third {
+	flex-basis: 33.333333%;
+	box-sizing: border-box;
+	background-color: red;
+	border: 1px solid black;
+}
+
+.col-fourth {
+	flex-basis: 25%;
+	box-sizing: border-box;
+	background-color: green;
+	border: 1px solid black;
+}
+
+
+.box {
+	width: 400px;
+	height: 400px;
+	border: 1px solid black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centered {
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+}
+
+
+
+
