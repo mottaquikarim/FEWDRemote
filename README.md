@@ -10,7 +10,7 @@
 ## Table of Contents
 Here are all the lectures for this course. This section will be updated with notes as we make our way through the curriculum.
 
-### 👉 👉 [Homework 1](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_1) 👈 👈
+### 👉 👉 [Homework 2](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_2) 👈 👈
 
 ### [Lecture 1: How do we internet, tho?](Lecture_1) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=1#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_1/class_notes)
         	
