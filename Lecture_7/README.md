@@ -1,4 +1,4 @@
-# Lecture 7: Grids II
+# Lecture 7: Grids Practice
 
 -
 
