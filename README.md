@@ -24,11 +24,11 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 6: Grids I](Lecture_6) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=6#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_6/class_notes)
 
-✅✅✅✅
-
 ### [Lecture 7: Grid Practice](Lecture_7) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=7#/)
 
 ### [Lecture 8: Frontend Frameworks](Lecture_8) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=8#/)
+
+✅✅✅✅
         	
 ### [Lecture 9: JavaScript](Lecture_9) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=9#/)
         	
