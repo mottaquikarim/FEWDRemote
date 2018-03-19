@@ -10,9 +10,8 @@
 ## Table of Contents
 Here are all the lectures for this course. This section will be updated with notes as we make our way through the curriculum.
 
-### 👍 👍 [Final Project Specs](https://github.com/mottaquikarim/FEWDRemote/tree/master/Final_Project) 👍 👍
 ### 👉 👉 [Homework 1](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_1) 👈 👈
-        
+
 ### [Lecture 1: How do we internet, tho?](Lecture_1) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=1#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_1/class_notes)
         	
 ### [Lecture 2: HTML Markup](Lecture_2) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=2#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_2/class_notes)
@@ -50,6 +49,11 @@ Here are all the lectures for this course. This section will be updated with not
 ### [Lecture 17: UI Components / jQuery (cont'd)](Lecture_17) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=17#/)
         	
 ### [Lecture 18: UI Components / jQuery](Lecture_18) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=18#/)
+
+## Homework and Final Project Specs
+
+### [Final Project Specs](https://github.com/mottaquikarim/FEWDRemote/tree/master/Final_Project)
+### [Homework 1](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_1)
         	
 ## Your Instructional Team
 
