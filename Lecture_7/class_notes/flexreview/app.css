@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	/*justify-content: align along the main-axis*/
+	/*align-items: align along the cross-axis*/
+	flex-wrap: wrap;
+}
+
+.col {
+	background-color: yellow;
+	border: 1px solid black;
+	box-sizing: border-box;
+	height: 50px;
+	width: 25%;
+}
+
+.col:last-child {
+	flex-grow: 1;
+}
+

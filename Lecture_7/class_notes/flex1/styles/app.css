@@ -1,0 +1,27 @@
+.row {
+	width: 100%;
+	min-height: 100px;
+	background-color: #ccc;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.flex-container {
+	min-height: 250px;
+	background-color: transparent;
+	display: flex;
+}
+
+.col {
+	background-color: #ccc;
+	box-sizing: border-box;
+	width: 25%;
+	margin-left: 10px;
+}
+
+.col-three-quart {
+	width: 75%;
+	margin-right: 10px;
+	margin-left: 0px;
+}
