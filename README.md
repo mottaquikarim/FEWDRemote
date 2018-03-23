@@ -26,7 +26,7 @@ Here are all the lectures for this course. This section will be updated with not
 
 ### [Lecture 7: Grid Practice](Lecture_7) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=7#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_7/class_notes)
 
-### [Lecture 8: Frontend Frameworks](Lecture_8) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=8#/)
+### [Lecture 8: Frontend Frameworks](Lecture_8) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=8#/)| [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_8/class_notes)
 
 ✅✅✅✅
         	
