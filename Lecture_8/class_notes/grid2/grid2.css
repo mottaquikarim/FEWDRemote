@@ -1,0 +1,22 @@
+.row {
+	display: flex;
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+
+.col {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.dark {
+	background-color: #ccc;
+	border: 1px solid #999;
+}
+
+.content {
+	background-color: #ccc;
+	border: 1px solid #999;
+	height: 100%;
+}

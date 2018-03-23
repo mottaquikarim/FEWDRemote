@@ -1,0 +1,41 @@
+.dark {
+	background-color: #ccc;
+	border: 1px solid #999;
+}
+
+.row {
+	min-height: 100px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.row-tall {
+	min-height: 200px;	
+}
+
+.row-xtall {
+	min-height: 300px;
+}
+
+.row-flex {
+	display: flex;
+}
+
+.col {
+	box-sizing: border-box;
+	margin-right: 20px;
+}
+
+
+.col-half {
+	width: 50%;
+}
+
+.col-third {
+	width: 33.33333%;
+}
+
+
+.col:last-child { /* psuedoclass */
+	margin-right: 0;
+}

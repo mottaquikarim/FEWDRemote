@@ -1,0 +1,26 @@
+/*
+
+DESKTOP FIRST APPROACH
+body {
+	background-color: red;
+}
+
+@media all and (max-width: 800px) {
+	body {
+		background-color: green;
+	}	
+}
+
+*/
+
+/* MOBILE FIRST APPROACH */
+
+body {
+	background-color: green;
+}
+
+@media all and (min-width: 800px) {
+	body {
+		background-color: red;
+	}
+}
