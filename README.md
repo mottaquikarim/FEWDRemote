@@ -30,7 +30,7 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 9: JavaScript](Lecture_9) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=9#/)
         	
-### [Lecture 10: Variables + Functions](Lecture_10) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=10#/)
+### [Lecture 10: DataTypes](Lecture_10) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=10#/)
 
 ✅✅✅✅
         	
