@@ -1,463 +1,480 @@
-# Lecture 10: Variables and Functions
+# Lecture 10: DataTypes
 
 -
 
-Welcome to Lecture 10! Here's a brief breakdown of today's class.
+Welcome to Lecture 10! 
+
 ![foo](https://media3.giphy.com/media/lXiRLb0xFzmreM8k8/giphy.gif)
 
 -
 
 #### Learning Objectives
-1. Get really good at writing JavaScript functions
-2. Understand the concept of scope, returns, and params
-3. Understand **why** functions are useful and therefore important
+
+* Review JavaScript Datatypes
+* Declare, assign to, and manipulate data stored in variables
 
 -
 
-#### Stretch Goals
-What are **objects** and how are they manifested in javascript?
+#### Agenda
+1. What are datatypes?
+2. Supported Javascript Datatypes
+3. Declaring Variables in Javascript
+4. Datatypes and supported operators
+5. Arrays and array ops
 
--
-
-#### Rundown
-Ok game time.
-
--
-
-#### [Warmup](#warmup)
-
--
-
-#### [Types of Variables](#types-of-variables)
-
--
-
-#### [Functions and Conditionals](#functions-and-conditionals)
 ---
-# Warmup
+
+## Datatypes
+
+In programming languages, a data type is a classification identifying one of various types of data. 
 
 -
 
 
+From a data type, we can determine:
+
+* the possible values for that type
+* the operations that can be performed on that type
+* the meaning of the data
+* the way values of that type can be stored
 
 -
 
-#### [JS Global Notes](http://samantha.fewd.us/#fork/mottaquikarim/FEWD113_JS_Functions) | [LIVE Instructor View](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD113_JS_Functions)
-<p></p>
-Let's begin with some review problems.
+Most programming languages have the following data types. 
+
+👇👇👇
 
 -
 
-#### Exercises
+### Strings
+
+* single words or sentences surrounded by double or single quote, e.g. `'Hello World'`
 
 -
 
-#### [PSET - Warmup](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_JavaScript_Basics_Warmup) | [LIVE Instructor Notes](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD629_JavaScript_Basics_Warmup)
+### Numbers
+
+* typically languages will make a distinction between **integers** and **floats**
+* (in some languages, distinctions go even deeper, ie: **long**, **double**, **short**, etc
 
 -
 
-#### [PSET - Functions](http://samantha.fewd.us/#fork/mottaquikarim/Functions_Practice) | [LIVE Instructor Notes](http://samantha.fewd.us/#broadcast/mottaquikarim/Functions_Practice)
-<p></p>
+
+### NB
+* in javascript, all numbers are represented as 64 bit floating point integers
+* however maximum "safe" number in javascript is (2^53)-1, or 9007199254740991
+* **[more info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER)**
 
 -
 
-#### Variable Types
-There are exactly 5 primitive types in javascript:
-3. **number**
-4. **string**
-5. **boolean**
-1. **undefined**
-2. **null**
-And one non-primitive type:
-* **object**
-Additionally, there are a few **types** in javascript as well:
-1. **number**
-2. **string**
-3. **boolean**
-4. **undefined**
-5. **object**
-6. **function**
-Curiously, **null** is defined as an object and functions, which are objects, have a unique type.
-Together, these values in combination with **operators** define all that is javascript. 
+### Booleans
+
+* either true or false, i.e. `true`, `false`
+
+-
+
+### Arrays / Lists
+
+* collections of data, e.g. `['Shirts', 'Pants', 'Dresses']`
+
+-
+
+### Dictionary / Hash-map
+
+* collection of data in the form of key-value pairs. Also referred to as a `map` or `dictionary`.
+
+-
+
+### Objects / Classes
+
+* a representation of something in the real world using the datatypes described above
+
 ---
-# Types of Variables
+
+## Supported JavaScript Datatypes
+
+👇👇👇
 
 -
 
 
+In JavaScript, we have five **primitive** types:
+
+* **string**
+* **number**
+* **boolean**
+* **undefined**
+* **null**
+* **symbol**
 
 -
 
-#### [JS Global Notes](http://samantha.fewd.us/#fork/mottaquikarim/FEWD113_JS_Functions) | [LIVE Instructor View](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD113_JS_Functions)
+### Strings
 
--
-
-#### Exercise
-We want to learn enough javascript to be able to solve the following PSET.
-
--
-
-#### [Basic Vars Review](http://samantha.fewd.us/#fork/mottaquikarim/Basic_Vars_Review) | [LIVE Instructor View](http://samantha.fewd.us/#broadcast/mottaquikarim/Basic_Vars_Review)
-This will help you get your fingers warm re: simple javascript variable declarations.
-
--
-
-#### Definitions
-A variable type is a way to classify the different kinds of data we can save to a variable. There are exactly 6 types of variables:
-
--
-
-#### Primitives
-* `undefined`
-* `null`
-* boolean
-* number
-* string
-
--
-
-#### Non Primitive
-* Object
-
--
-
-### Primitives
-A Primitive type is a most basic bit of information that you can store. For example, a number is a primitive because it cannot be made up of any of the other types of variables
-<strong>Alternate definition</strong>: Think of this as an atom -- atoms are atoms because we cannot break them down into any more basic bits, same goes for primitives
-
--
-
-#### `undefined`
-Undefined is the default state of any variable. Basically means the variable is empty or has not yet been assigned a value, primitive or otherwise
-
--
-
-#### `null`
-The null variable is different from the `undefined` type, but only subtly so.
-1. the `null` type is assigned to a variable, but its "value" is empty.
-2. the `undefined` type is by default the value of each variable that is declared but not defined
-3. &#35;esoteric
-**[Example](http://fewd.us/howdoi/#/problem/5131)**
-
--
-
-#### Booleans
-True or false. Basically.
-```javascript
-var myBooleanValue = true; // true
-var myBooleanValueThatIsFalse = false; // false
-console.log( typeof myBooleanValue );
-```
-
--
-
-#### Numbers
-Numeric values that can be operated upon via the standard rules of arithmetic.
-```javascript
-var myNumber = 1;
-var pi = 3.14159; // ...approximately
-```
-
--
-
-#### Strings
-This one is interesting, we use this to represent text. Anything between the quotations (double or single, doesn't matter as long as you are consistent) is treated as a number.
-So...
-```javascript
-var myName = 'Taq Karim';
-var dudeThisIsAString = '105';
-var doubleQuotesRCool2 = "Look ma! I'm double quoted";
-```
-
--
-
-### Non-Primitives or: how I learned to stop worrying and Love the Object.
-Objects are the bees-knees yo.
-<div>Seriously.</div>
-<strong>Objects are a collection of properties where each property is a primitive type</strong>.
-
--
-
-#### In other words...
-```javascript
-// just primitives
-var someNumber = 1;
-var someBool = false;
-var someNullItem = null;
-// as an object...
-var myObject = {
-	someNumber: 1
-	, someBool: false
-	, someNullItem: null
-}; // notice the use of ":" instead of "="
-// to access these items:
-console.log( myObject.someNumber );
-console.log( myObject.someBool );
-```
----
-# Functions and Conditionals
-
--
-
-Let's learn to actually do stuff with javascript now. Functions and conditionals well help us automate programming tasks and also build in decision making capabilities into our programs.
-
--
-
-#### [JS Global Notes](http://samantha.fewd.us/#fork/mottaquikarim/FEWD113_JS_Functions) | [LIVE Instructor View](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD113_JS_Functions)
-
--
-
-#### Learning Objectives
-1. Understand how to use functions to abstract away common coding tasks
-2. Use conditionals to build in decision making into our code.
-
--
-
-#### Exercises
-The following PSET contains 10 problems. 
-
--
-
-#### [PSET - Functions](http://samantha.fewd.us/#fork/mottaquikarim/Functions_Practice) | [LIVE Instructor Notes](http://samantha.fewd.us/#broadcast/mottaquikarim/Functions_Practice)
-We will attempt to solve some or MOST of them.
-
--
-
-#### [PSET - Conditionals](http://samantha.fewd.us/#fork/mottaquikarim/Conditionals) | [LIVE Instructor Notes](http://samantha.fewd.us/#broadcast/mottaquikarim/Conditionals)
-Try to solve all of these
-
--
-
-#### [Problem - Calculate Grade](http://samantha.fewd.us/#fork/mottaquikarim/Calculate_Grade) | [LIVE Instructor Notes](http://samantha.fewd.us/#broadcast/mottaquikarim/Calculate_Grade)
-This one is more difficult, try it out though!
-
--
-
-#### Functions
-Functions are essentially actions. We use functions to save a set of `instructions` that we can tell javascript to use over and over again. Functions have names, just like variables, but they hold more than just primitive values.
-
--
-
-#### Example
-This is a function declaration.
-```javascript
-function doSomething() {
-	alert('doing something!');
-}
-```
-Here is how we would call that function
-```javascript
-// copying over last code snippet for convenience
-function doSomething() {
-	alert('doing something!');
-}
-// calling it now
-doSomething();
-```
-
--
-
-#### Alternate way to do this
-```javascript
-var doSomething = function() {
-	alert('doing something!');
-}
-// call it
-doSomething();
-```
-
--
-
-#### Conditionals
-Used do perform logic
-
--
-
-### Rundown
-<a>JavaScript Logical Operators</a>
-<ul>
-    <li>`===`</li>
-    <li>`!==`</li>
-    <li>`>`</li>
-    <li>`<`</li>
-    <li>`>=`</li>
-    <li>`<=`</li>
-    <li>`&&`</li>
-    <li>`||`</li>
-    <li>`!`</li>
-</ul>
 ```js
-// Comparison operators
-// you can evaluate a situation by comparing one value in the script
-// to what you expect it might be
-// the result will be a boolean: true or false
-/*
- *  the strict equality checking operator
- *  SYMBOL: ===
- */
-var three = 3;
-var equalityCheck = ( three === 3 );
-console.log( 'three === 3', equalityCheck );
-// note that equalityCheck, and ALL OTHER COMPARISON OPERATORS
-// evaluate to booleans
-console.log( 'typeof equalityCheck', typeof equalityCheck );
-var equalityCheck2 = ( three === '3' ); // false because three is Number
-                                       // but '3' is a string
-console.log( "( three === '3' )", equalityCheck2 );
-// ALWAYS USE THE STRICT EQUALITY OPERATOR!!
-/*
- *  the strict NOT EQUAL checking operator
- *  SYMBOL: !==
- */
-var notEqualityCheck = ( three !== 4 ); // should be true
-var notEqualityCheck2 = ( three !== 3 ); // should be false;
-console.log( '( three !== 4 )', notEqualityCheck );
-console.log( '( three !== 3 )', notEqualityCheck2 );
-/*
- *  the greater than operator
- *  SYMBOL: >
- */
-var greaterThan = ( three > 4 ); // returns false
-var greaterThan2 = ( three > 2 ); // true
-console.log( '( three > 4 )', greaterThan );
-console.log( '( three > 2 )', greaterThan2 );
-/*
- *  the less than operator
- *  SYMBOL: <
- */
-var lessThan = ( three < 2 ); // returns false
-var lessThan2 = ( three < 5 ); // true
-console.log( '(three < 2)', lessThan );
-console.log( '(three < 5)', lessThan2 );
- 
-/*
- *  the greater than or equal to operator
- *  SYMBOL: >=
- */ 
-var greaterThanOrEqualTo = ( three >= 4 ); // false
-var greaterThanOrEqualTo2 = ( three >= 3 ); // true
-console.log( '( three >= 4 )', greaterThanOrEqualTo );
-console.log( '( three >= 3 )', greaterThanOrEqualTo2 );
-/*
- *  the less than or equal to operator
- *  SYMBOL: <=
- */ 
-var lessThanOrEqualTo = ( three <= 2 ); // false
-var lessThanOrEqualTo2 = ( three <= 3 ); // true
-console.log( '( three <= 2 )', lessThanOrEqualTo );
-console.log( '( three <= 3 )', lessThanOrEqualTo2 );
-/*
- *  LOGICAL OPERATORS
- *  logical operators allow you to compare the results of more than one
- *  comparison operator
- *  TYPES: '&&', '||'
- */ 
-/*
- *  the AND operator
- *  SYMBOL: &&
- *  returns true only when both expressions evaluate to true
- */ 
-var andOp = ((2 < 5) && (3 >=2)); // is 2 less than five AND
-                                  // is 3 greater than or equal to 2
-console.log( '((2 < 5) && (3 >=2))', andOp );
-console.log( 'typeof andOp', andOp );
-// NOTE, we can string together as many ANDs as we need...
-/*
- *  the OR operator
- *  SYMBOL: ||
- *  returns true when ONE of the expressions are true
- */ 
-var orOp = ((2 < 5) || (2 < 1)); // if EITHER one of these exprs are true
-                                 // then will evaluate to true
-console.log( '((2 < 5) || (2 < 1))', orOp );
-// NOTE, we can string together as many ORs as we need...
-/*
- *  the NOT operator
- *  SYMBOL: !
- *  returns opposite of evaluated expression
- */ 
-var notOp = !(2 < 1);
-console.log( '!(2 < 1)', notOp );
-// Complete example
-function checkNumber () {
-    
-    var n = prompt("Enter a number", "5")
-        , entered = "You entered a number between"; 
-    if (n >= 1 && n < 10) {
-        alert(entered + " 0 and 10");
-    }
-    else if (n >= 10 && n < 20) {
-        alert(entered + " 9 and 20");
-    }
-    else if (n >= 20 && n < 30) { 
-        alert(entered + " 19 and 30");
-    }
-    else if (n >= 30 && n < 40) {
-        alert(entered + " 29 and 40");
-    }
-    else if (n >= 40 && n <= 100) {
-        alert(entered + " 39 and 100");
-    }
-    else if (n < 1 || n > 100) {
-        alert("You entered a number less than 1 or greater than 100");
-    }
-    else {
-        alert("You did not enter a number!");
-      }
-}
+"hello!" // double quotes
+'hi' // single quotes
+`testing` // template literal - very useful, as we will see
 ```
-<a>The conditional block</a>
-<ul>
-    <li>the `if` statement</li>
-    <li>the `if/else` statement</li>
-    <li>the `if/else if/else` statement</li>
-</ul>
+
+-
+
+### Numbers
+
 ```js
-// the if..else statement check a condition
-// if it resolves to true the first code block is run
-// if the condition resolved to false the second code block is run instead
-var pass = 50    // pass mark
-    , score = 75   // current score
-    , msg;   // message
-    
-// select message to write based on score    
-if ( score >= pass ) {     
-    // conditional statement
-    // if code block
-    // anything in here will be run if
-    // the stuff in the (...) evaluates to true
-    msg = "Congratulations you passed!";  
-}    
-else {  // else code block; if the obove is NOT true then...
-    msg = " Try again :( ";  
-}
-// note this example of how we can use the if/else
-// to set the value of a variable
-console.log( msg ); 
-/*
- *  the if/else if/else block
- */
-var passingGrade;
-if ( score < 50 ) {
-    passingGrade = "F";
-}
-else if ( score < 60 ) {
-    passingGrade = "D";
-}
-else if ( score < 70 ) {
-    passingGrade = "C";
-}
-else if ( score < 80 ) {
-    passingGrade = "B";
-}
-else if ( score < 90 ) {
-    passingGrade = "A"
-}
-else {
-    passingGrade = "A+";
-}
-console.log( "Your grade is: ", passingGrade );
-    
-    
-    
+5
+3.14159
+4. // yes, this is valid. 
+   // no, do not ever do this in actual code
+```
+
+-
+
+### Boolean
+
+```js
+true // lower case, always
+false
+```
+
+-
+
+### undefined
+
+```js
+undefined
+```
+
+By itself, this datatype is quite meaningless. However when we get to variables we will see that it is essentially used to check if a variable has been **declared**
+
+-
+
+### null
+
+```js
+null
+```
+
+Same as above, the main difference being that **null** is used convey that a variable has been **declared** but it is still **empty**
+
+-
+
+### Symbol
+
+```js
+Symbol('description')
+```
+
+-
+
+Out of scope of this class, but feel free to read up on them on MDN!
+
+-
+
+### Determining the Type
+We can determine the type of a variable or value using `typeof()` (which returns a string).
+
+```js
+typeof 10
+=> 'number' // note the quotations, typeof yields a string
+```
+```js
+typeof {}
+=>  'object'
+```
+```js
+typeof 'Hello World' 
+=> 'string'
+```
+**Due to how JavaScript was first implemented, `typeof(null)` returns `'object'`**
+
+-
+
+Before exploring each individual data type and the operations we can apply to them, let's see how we can declare variables
+
+---
+## Variables
+
+👇👇👇
+
+-
+
+Variables are used to store data into a computer's memory so we can reference them later. We will always use the `const`/`let` keywords to declare a variable.
+
+-
+
+**const** vs **let**
+
+```js
+const a = 1;
+let b = 1;
+```
+
+* **const**: used to convey a _constant_ variable, meaning we don't expect to **ever** change the datatype of **a**
+* **let**: used to convey a ... _variable_ variable, meaning we **do** - and we are allowed to - mutate the datatype (or value, or both) of **b**
+
+
+
+-
+
+
+If we declare a variable without assigning it a value, its value is `undefined`:
+```js
+let a;
+a
+=> undefined
+```
+
+**Question**: what would happen if we tried the above with **const**?
+
+-
+
+### Naming
+By convention, all names should be `camelCased`, whether they're for variables or functions.
+
+
+```js
+const myScore = 100;
+```
+```js
+const myString = "Hello World!";
+```
+
+-
+
+Good variables are descriptive.
+Bad variables are ambiguous.
+
+**NOTE**: `$` and `_` are also valid variables.
+
+There are certain reserved words we can't/shouldn't use for names, *e.g.* `var`, `function`, `class`, etc.
+
+Do not use reserved keywords!
+
+-
+
+### Assignment Operators
+Values are assigned to a variable using `=`:
+```js
+const num = 1;
+num;
+=> 1
+```
+
+-
+
+
+JavaScript also has compound assignment operators, `+=`, `-=`, `/=`, and `*=`:
+```js
+num;
+=> 1
+
+num += 5;
+=> 6
+```
+
+**NOTE**: these usually only apply to the **number** datatype, however the **+=** will also work for strings
+
+-
+
+We can use `++` and \-\- to increment and decrement by `1` respectively as postfix or prefix operators:
+```js
+const num = 5;
+num;
+=> 5
+
+num++;
+=> 5
+num;
+=> 6
+
+++num;
+=>7
+```
+
+-
+
+### Number to String
+Use the `toString()` method on a number by itself, or on a variable that's storing the number:
+```js
+const num = 1;
+num.toString();
+=> "1"
+
+(1).toString();
+=> "1"
+
+// what does this return?
+1.toString();
+```
+
+-
+
+### String to Number
+Use the `Number()` method, and pass in the string. It will return `NaN`, or not-a-number for anything that's not parseable:
+```js
+Number("5");
+=> 5
+
+Number(":)");
+=> NaN
+```
+
+**QUESTION** what is **NaN**? How can we prove to ourselves definitively his datatype?
+
+-
+
+Now, we will explore some of the javascript specific datatypes in further detail
+
+---
+
+### Numbers
+👇👇👇
+
+-
+
+In JavaScript, we only have floating point numbers, which results in cases like these:
+```js
+0.1 + 0.2
+=> 0.30000000000000004
+```
+
+```js
+3.0 === 3
+=> true
+```
+
+-
+
+### Arithmetic Operators
+We use operators to work with data in JavaScript. The standard arithmetic operators are available:
+```js
+1 + 2
+=> 3
+```
+```js
+2 - 5
+=> -3
+```
+```js
+5 / 2
+=> 2.5
+```
+```js
+6 * 2
+=> 12
+```
+
+-
+
+### Additional Math Operators
+For additional math operators, *e.g.* power, we can use the `Math` object
+```js
+// 3^2 becomes
+3 ** 2
+=> 9
+```
+```js
+// square root of 4 becomes
+4 ** 0.5
+=> 2
+```
+```js
+// random number between 0 and 1 exclusive
+Math.random()
+=> 0.3156855241316119
+// hopefully, you got a different random number!
+```
+```js
+// rounding a number to an integer
+Math.round(3.99)
+=> 4
+```
+
+---
+### Strings
+Strings are a collection of characters. We'll use this type for words and text, *e.g.* `'John Doe'`. We can combine, or concatenate strings together, using the `+` operator:
+```js
+// notice the space in "Hello "
+"Hello " + "World!"
+=> "Hello World!"
+```
+
+-
+
+If we try adding a number and a string, the number gets converted to a string:
+```js
+"3" + 3
+=> "33"
+
+"5" + 6
+=> "56"
+```
+
+-
+
+### Template Literals
+Template literals are string literals that allow you to embed and splice expressions in a more flexible way.
+
+-
+
+We use backticks to indicate the start of a template literal:
+```js
+// multi-line strings
+`Hello, this is Line 1!
+...and here is Line 2!
+`
+```
+
+-
+
+Placeholders and more complex expressions can also be used:
+```js
+const firstName = 'Foo';
+const lastName = 'Bar';
+`Hello, ${firstName}`
+=> "Hello, Foo"
+
+`Bye, ${firstName + lastName}`
+=>"Bye, FooBar"
+```
+
+-
+
+Note that you need to end the string with whatever type of quote you started out with:
+```js
+"Greetings y'all!"
+=> 'Greetings y\'all!'
+```
+
+Depending on the environment, the quote may appear as escaped or unescaped.
+
+-
+
+You can escape a quote manually using a `\`
+```js
+'John\'s a JavaScript developer!'
+=> 'John\'s a JavaScript developer!'
+```
+
+**NOTE**: this is not necessary if using string literals
+
+---
+
+## Practice
+
+**[Basic Vars Review](http://samantha.fewd.us/#/fork/mottaquikarim/Basic_Vars_Review)** | **[LIVE Instructor Version](http://samantha.fewd.us/#/broadcast/mottaquikarim/Basic_Vars_Review)**
+
+-
+
+### Mad Libs
+
+Let's create a simple mad libs program.
+
+1. Create three variables, `noun`, `verb`, `adjective`. 
+2. By default all three should be set equal to **"---------"** (essentially a blank line)
+3. When the values of those variables are swapped with an actual noun, verb, adjective, display the following string:
+
+```js
+"The [NOUN] [VERB] [ADJECTIVE]"
 ```
