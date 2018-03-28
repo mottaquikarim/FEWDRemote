@@ -1,0 +1,28 @@
+.row {
+	display: flex;
+	box-sizing: border-box;
+	padding: 0 50px;
+	/*justify-content: space-between;*/
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.col-right {
+	margin-left: auto;
+}
+
+.splash {
+	padding: 30px 0;
+	background-image: url(http://fewdmaterials.github.io/developer_matchmaker/images/coworking.jpg);	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.blurb {
+	width: 40%;
+	font-size: 24px;
+	padding: 50px;
+	background-color: rgba(204, 204, 204, 0.7);
+}
