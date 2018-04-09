@@ -1,345 +1,492 @@
-# Lecture 13: Objects, Dynamic Data
+# Lecture 13: Loops and Object Literals
 
 -
 
-Welcome to lecture 13! Here's a brief class breakdown.
+Welcome to Lecture 13! 
+
 ![kittens](https://media1.giphy.com/media/102mqDgAb4Kfug/giphy.gif)
 
 -
 
 ## Learning Objectives
-0. Get good at conditionals, fam
-1. What are objects? How are they useful in programming?
-2. **(Time permitting)** How can we store and manipulate dynamic data with arrays and objects?
+* Practice conditionals
+* Review iteration using `for` and `forEach`, and introduce `while` and `do/while` loops
+* Use Object literals for solving problems in javascript
 
 -
 
-## Homework
-Implement this **[Batman Game](https://fewdmaterials.github.io/BatmanGame/)**. Read the instructions **carefully**. You are to publish your commits to github and submit the end URL (which should have a "game" where Batman can move and jump) to slack, as per usual.
+## Agenda
+* Conditional Statements Practice
+* `while` loops
+* Iteration
+* Object literal basics
 
--
-
-## Additional Practice
-Please solve:
-1. **[these following problems](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_functions_pset_3)**
-2. **[this one](http://samantha.fewd.us/#fork/mottaquikarim/Calculate_Grade)**
-3. **[these problems](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_functions_pset_6)**
-
--
-
-## Last Class Notes
-Here are the **[notes from last lecture](http://samantha.fewd.us/#broadcast/mottaquikarim/fewd627_12-notes)**
-
--
-
-## TODAY's Notes
-Here are the **[notes for TODAY's lecture](http://samantha.fewd.us/#broadcast/mottaquikarim/fewd627_13-notes)**
-
--
-
-#### To Do Today
-
--
-
-#### [Warmup](#warmup)
-
--
-
-#### [Objects](#objects)
-
--
-
-#### [Arrays](#arrays)
 ---
-# Warmup
+## Warm up
+
+
+**[Conditionals Review](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_functions_pset_3)**
+
+**PS**: If you wanted to skip the first one (the `isUndefined`) that's fine - it's tricky!
 
 -
 
-Let's begin with a few exercises.
+**Eligibility Check Exercise**
+
+Create a blank webpage, load an **app.js** file and write a function called **`getEligibility`** that outputs a message based on a user's age. 
 
 -
 
-## TODAY's Notes
-Here are the **[notes for TODAY's lecture](http://samantha.fewd.us/#broadcast/mottaquikarim/fewd627_13-notes)**
+The program must **print out only the most recent item** a person can do, *e.g.* if a user's age is 46, the message is 'You can run for president':
+
+* Under 16: 'You can go to school!'
+* 16 or Older: 'You can drive!'
+* 18 or Older: 'You can vote!'
+* 35 or Older: 'You can run for president!'
+* 62 or Older: 'You can collect social security!'
+
+
+
+**PS:** by "print out" we mean console.log the returned value of a function invoked
 
 -
 
-## Conditionals
-Now to review some if/else conditional logic.
-**[Logic Practice](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_functions_pset_2)**.
+If a user doesn't provide a valid age, tell them to do so. For now, you can hardcode the age to test your code.
 
--
-
-## Review
-Here's a quick reminder of what we covered last time.
-```js
-// boolean operators
-// false
-console.log( 3 === '3' );
-// true; LOL don't ever use...wtf is this
-console.log( 3 == '3' ); 
-// true
-console.log( 3 !== '3' );
-// false; don't ever use this again 
-console.log( 3 != '3' ); 
-// false 
-console.log( 3 > 3 ); 
- // true
-console.log( 3 >= 3 );
-// this evaluates to false, so skip
-if ( 3 === '3' ) { 
-    console.log('here')
-}
-// evaluates to true
-if ( 3 !== '3' ) { 
-    console.log('here2')
-}
-// this is "falsey", will not run
-if (undefined) {
-    console.log('here?')
-}
-// this is "truthy", so will run
-if (2) {
-    console.log('here!');
-}
-const isItRaining = false;
-const isItCold = true;
-// logical operators
-// logical OR
-if (isItCold || isItRaining) {
-    console.log('wear a coat')
-}
-// logical AND
-if (isItCold && isItRaining) {
-    console.log('wear a coat AND bring an umbrella');
-}
-else {
-    console.log('wear regular clothes, yo')
-}
-// if else if else block
-const temp = 62;
-if ( temp <= 32  ) {
-    console.log('it is freezing')
-}
-else if (temp > 32 && temp < 90 ) {
-    console.log('it is normal')
-}
-else {
-    console.log('you dead');
-}
-```
 ---
-# Objects
+## Loops
+
+Let's review some ways to make loops in JavaScript. We'll use them to evaluate some block of code multiple times.
+
+-
+## While Loop
+We can use the `while` statement to run a code block as long as the condition is `true`. The condition is evaluated **before** executing the block.
+
+```
+while (condition) {
+    //statements
+}
+```
 
 -
 
-
-
--
-
-## TODAY's Notes
-Here are the **[notes for TODAY's lecture](http://samantha.fewd.us/#broadcast/mottaquikarim/fewd627_13-notes)**
-<p></p>
+Outside of interviews, I've rarely use a `while` loop. They're useful for rare problems where you're not iterating over an array, or you don't know when to stop outside of the loop.
 
 -
 
-## Exercises
+## Infinite and Never-run While Loops
+Remember, the condition is evaluated **before** executing the block.
+```
+while (true) {
+  // infinite loop
+}
+
+while (false) {
+  // never-run loop
+}
+```
 
 -
 
-## [Problems 47-50: Objects](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_pset_9) | [LIVE class notes](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD_629_functions_pset_9)
-<p></o>
-Objects in javascript are a way to group variables that are similar to each other thematically.
+Create an array containing the numbers 1-10 inclusive
+```
+const num = 1;
+const numArray = [];
+while (num < 11) {
+    numArray.push(num);
+    num++;
+}
+console.log(numArray);
+// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+```
 
 -
 
-## Example
-Describe a `cat` with javascript.
-Based on what we know thus far, we can do the following:
+Alertnative approach:
 ```js
-const catName = 'Annabelle Lee';
-const catType = 'tabby';
-const catLimbs = 4;
-const catAge = 10;
-const catIsCute = true;
+const numArray = [];
+while (numArray.length < 10) {
+    numArray.push(numArray.length+1);
+}
+console.log(numArray);
+// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 ```
-Using those stored variables, we can reasonably formulate a portrait of a paricular cat.
-However, what if we needed to describe **two** cats in javascript? What now?
-Again, based on what we know so far, we would be force to do the following:
-```js
-const catName2 = 'Annabelle Lee';
-const catType2 = 'tabby';
-const catLimbs2 = 4;
-const catAge2 = 10;
-const catIsCute2 = true;
-```
-**OR**, we'd have to do the following:
-```js
-const belleFullName = 'Annabelle Lee';
-const belleType = 'tabby';
-const belleLimbs = 4;
-const belleAge = 10;
-const belleIsCute = true;
-```
-**^^^** with both of those strategies, we **could** solve our problem of having described two cats...but the issue still persists - what if we needed 10 cats? What if we had **two cats with the same name**? What if we generically wanted to define a cat through a function?
-In order to solve all of the above usecases, we must now consider a new type of javascript variable, the **object**.
-Objects are **everywhere** in javascript **and** have much deeper usecases beyond what was outlined above. In fact, all of javascript itself is **built** on objects.
-Before going further, let us look at how to store objects and manipulate them.
+^ what are the key differences between this example and the one above it?
 
 -
 
-#### Example
-Our previous cat, now as an object:
+ES6 approach:
 ```js
-const belle = {
-    type: 'tabby',
-    age: 10,
-    limbs: 4,
-    isCute: true
-};
+const numArray = Array.from(Array(11).keys()).slice(1)
+// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 ```
-Another way to do this:
-```js
-const belle = {};
-belle.type = 'tabby';
-// ..etc..
-```
-A third way to do this:
-```js
-const belle = {};
-belle['type'] = 'tabby';
-```
-Reading objects:
-```js
-const belle = {
-    type: 'tabby',
-    age: 10,
-    limbs: 4,
-    isCute: true
-};
-console.log(belle.type); // tabby
-console.log(belle['age']) // 10
-const key = 'limbs';
-console.log(belle[key]); // 4
-```
+Note that this approach, while terse may be considered a bit more confusing. (NB: I'm personally very fond of this technique)
+
+
 ---
-# Arrays
+## For Loop
+We've see a `for` loop already. Let's take one more look:
+```
+const a = [1, 2, 3, 4, 5];
+for (const i = 0; i < a.length; i++) {
+  console.log(a[i]);
+}
+//what should we see?
+```
 
 -
 
+If we absolutely need to use a `for` loop to iterate over an array, it's helpful to cache the array's length:
 
+```
+const a = [1, 2, 3, 4, 5];
+const len = a.length;
+for (const i = 0; i < len; i++) {
+  console.log(a[i]);
+}
+```
 
 -
 
-## TODAY's Notes
-Here are the **[notes for TODAY's lecture](http://samantha.fewd.us/#broadcast/mottaquikarim/fewd627_13-notes)**
-<p></p>
-
--
-
-## Exercises
-
--
-
-## [Basic Practice](http://samantha.fewd.us/#fork/mottaquikarim/Arrays_PSET)
-
--
-
-## [Additional Practice](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_pset_8)
-<p></p>
-Arrays are **objects** that have **numerical** keys. We use them to define and manipulate lists containing **similar** information.
-So for example, we could use an array to keep track of the test scores for every student in a class, since each test score is a number from 0-100. Additionally, arrays are useful to sort information or keep track of stuff positionally (ie: first item more important than second, etc).
-**Example**
-Three ways to define an array. **[Resource](http://fewd.us/howdoi/#/problem/3561)**
-```js
-// preferred method
-var arrayEx1 = []; 
-// not preferred
-var arrayEx2 = new Array(); 
-// array with some predefined values
-var arrayEx3 = [1,2,3,4]; 
-``` 
-You can read array points like so:
-```js
-console.log(arrayEx3[0]); // 1
-console.log(arrayEx3[2]); // 3
+Alternatively, here is a more terse approach
 ```
-Notice that arrays are **0-index** based, meaning the first item in an array will have an index of 0.
-**Define: index** -- this is the **key** of the array, notice how it is numerical.
-An array is an object, so we can access properties with the **[]** notation. **However,** something like this **arrayEx3.0** will not work.
-**Length property**
-We can access the length of an array (ie: the number of items inside of it), quite easily with the **.length** property
-```js
-console.log(arrayEx3.length); // 4
+const a = [1, 2, 3, 4, 5];
+for (const i = 0, len = a.length; i < len; i++) {
+  console.log(a[i]);
+}
 ```
-Note that it says **4**, not **3**. The **last** index of an array is always **1 minus the length** since indices are **0-based**.
-**Array Methods**
-Adding/removing items to end of array. **[Resource](http://fewd.us/howdoi/#/problem/3566)**
-```js
-var arr = ["car", "mouse", "computer", 1, "FEWD", 50];
-arr.pop(); // this will remove the last item in the array called arr
-console.log(arr); // this will show us the elements inside of arr after the pop()
-var arr2 = ["car", "mouse", "computer", 1, "FEWD", 50];
-arr2.push('new item'); // you can push in a new string
-arr2.push(27); // you can push in a new number
-arr2.push(['new array', 2, 'cat']); // you can even push in another array
-console.log(arr2);
+
+---
+## forEach Loop
+As mentioned in the last class, we prefer the `forEach` loop:
 ```
-Adding/removing items to beginning of array. **[Resource](http://fewd.us/howdoi/#/problem/3567)** 
-```js
-var arr1 = ['bike', 'snacks', 'ruby', 10];
-arr1.shift(); // this will remove the first item which is bike
-console.log(arr1);
-var arr2 = ['bike', 'snacks', 'ruby', 10];
-arr2.unshift('games'); // this will add games to the beginning of the array
-console.log(arr2);
-```
-Adding/removing items anywhere. **[Resource](http://fewd.us/howdoi/#/problem/3568)** 
-```js
-var arr1 = ['FEWD', 50, 'JS', 'Array', 'Methods'];
-arr1.splice(1, 0, 'add this', 'also add this'); // at index [1] we want to remove none and add the 2 strings
-console.log(arr1);
-var arr2 = ['JAVASCRIPT', 2813, 'i<3codes', true, false];
-arr2.splice(2, 1); // at index [2] we want to remove one item
-console.log(arr2);
-```
-Looping. **[Resource](http://fewd.us/howdoi/#/problem/3580)**
-```js
-// example using for loop and array:
-var scores = [22, 46 , 99]   // array of scores
-    , arrayLength = scores.length   // items in array
-    , roundNumber = 0   // current round
-    , msg = " "        // message
-    , i;              // counter
-    
-// loop through the items in the array
-/*
-    here's how a standard for loop workds
-    for ( initialization; condition; update ) {
-        // note that after every 'initialization'
-        // 'condition' and 'update' we have semicolons
-        // within this for block you would add code
-        // that would get run on every iteration of loop
+["dog", "cat", "turtle"].forEach(
+    function(currentValue, index, array) {
+        console.log("I want a ", currentValue);
+        console.log(currentValue);
     }
-*/
-for ( var i = 0; i < arrayLength; i++ ) {
-    
-    // arrays are zero based so 0 is round 1
-    // add 1 to the current round
-    roundNumber = ( i + 1 );
-    
-    // write the current round to the message
-    msg += 'round' + roundNumber + ': ';
-    
-    // get the score from the scores array
-    msg += scores[i] + " ";  
-    
-    console.log('=========================');
-    console.log( 'i is: ', i );
-    console.log( 'scores['+i+'] is: ', scores[i] );
-    console.log( 'roundNumber: ', roundNumber );
-    console.log( 'msg: ', msg );
-    console.log('=========================');
-}    
-    
+);
 ```
+Using the `array` and `index` parameter, how else could we have logged each value?
+
+-
+
+Here's another way to write the above (NB: I strongly prefer this approach
+
+```
+["dog", "cat", "turtle"].forEach(
+    (currentValue, index, array) => {
+        console.log("I want a ", currentValue);
+        console.log(currentValue);
+    }
+);
+```
+
+-
+
+^ we call this an `arrow function`, it has subtle differences (I would say advantages) over using the `function` keyword. We will discuss these nuances when appropriate but for now strongly prefer to use arrow functions over function expressions when handling callbacks (ie: functions passed into other functions, like above)
+
+---
+
+## Practice
+
+* **[Conditionals](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_functions_pset_3)** **OR** **[Conditionals (HARD MODE)](http://samantha.fewd.us/#fork/mottaquikarim/JSR-PSET_conditionals)**
+* **[Conditionals w/UI](http://samantha.fewd.us/#fork/mottaquikarim/Calculate_Grade)**
+* **[Loops](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_pset_8)** - NB: there is a **second** tab with additional problems!
+* **[Arrays](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_pset_10)**
+
+---
+
+## Object Literal Basics
+
+Let's discuss the mechanics of how object literals are created and used. Then, let's use them to build something useful.
+
+-
+
+Object Literals are another type of **data structure**, or method for storing and retrieving data. 
+
+* We are already intimately familiar with one type of data structure, **arrays**.
+* Object literals are essentially dictionaries, or associative arrays.
+* With arrays, we use the **index**, a **number**, as a way to store and retrieve information.
+* With object literals, we use the **key**, a **string**, as a way to store and retrieve information.
+
+-
+
+**SIDE NOTE**
+
+So actually, the computer science term for dictionaries/object literals/etc is called the **hash map**. 
+
+**Hash maps** have a **hashing function** and an internal **array** for storing data. Given a  **key** and **value** pair that we wish to store, the hash map converts the **key** into an index for the array using the hashing function and stores the value at the calculated index.
+
+-
+
+### Creating Objects
+
+```js
+// empty object literal
+const myObj = {};
+
+// object with prefilled values
+const myObj2 = {
+    "property1": "value1",  // notice the colon!
+    "property2": 2, // notice the comma!
+}
+
+// updating an object after the fact
+myObj2["property3"] = true;
+```
+
+Note that updating an object literal is not the same a **redefining** it. This is why we are able to mutate our **const** object without errors.
+
+-
+
+Objects are just another type of valid javascript datatype. Question:
+
+```js
+//  what do you expect to see?
+console.log(typeof myObj2); 
+
+ // what do you expect to see?
+console.log(typeof myObj2["property1"]);
+
+// how about now?
+console.log(typeof myObj2["thisPropertyDoesntExistTho"]);
+```
+
+-
+
+A note about syntax:
+
+```js
+myObj2.foobar = 'baz';
+
+const myObj3 = {
+    test: 1,
+}
+
+console.log(myObj3.test)
+```
+
+Sometimes you will see object properties being referenced and defined in the manner above. 
+
+👇👇👇
+
+-
+
+Generally, this is usually **ok** however if you want to store an object property that has invalid javascript characters such as spaces or dashes you **must** use the approached defined initially.
+
+-
+
+### Dynamically setting / retrieving values
+
+Consider the following:
+
+```js
+const o = {
+	"test": 1,
+}
+
+const key = "test";
+console.log(o[key]); //  what should this give us?
+```
+
+```js
+const key = "foo";
+const o = {
+	[key]: 'val',
+}
+console.log(o); // what key is stored in o?
+```
+
+Keep this technique in mind, it will come in handy when we write more complex code.
+
+-
+
+### Methods
+
+Object properties that are type `function` are called **`methods`**. (Just a fancy word for a function that is the property of an object). 
+
+👇👇👇
+
+-
+
+Here's how we can get/set methods
+
+```js
+const human = {
+    'name': 'Taq Karim',
+    speak(catchphrase) {
+		    return "Hi, my name is " + 
+				human.name + 
+				'. ' + 
+				catchphrase;
+		}
+}
+
+console.log(human.speak('BOOM. We chillin')); 
+```
+
+-
+
+Generically, we can define methods as follows:
+
+```
+const obj = {
+	method() {
+		// this is preferred
+	},
+	// or
+	method2: function() {
+	
+	},
+	// or
+	method3: () => {
+	
+	}
+}
+```
+
+-
+
+### Example of object usecase
+
+```js
+const htmlNode = {
+	tagName: 'div',
+	attributes: {
+		'data-test': '1',
+		'id': 'LOL-dont-try-this-at-home',
+		'class': 'foo bar',
+	},
+	getAttribute(name) {
+		return htmlNode.attributes[name];
+	},
+	setAttribute(name, value) {
+		htmlNode.attributes[name] = value;
+	},
+	classList: {
+		add(name) {
+			const currClass = htmlNode.getAttribute('class').split(' ');
+			currClass.push(name);
+			htmlNode.setAttribute('class', currClass.join(' '))
+		}
+	},
+}
+```
+
+* this is a **representation** in javascript of an **HTML DOM element**
+
+-
+
+Primarily, this is the major usecase for objects. Think of it as a way to represent a **real world** thing in terms of code. Object literals are the simplest way to achieve that.
+
+In a future lecture we will consider **classes** and how we can standardize this concept and make it more reusable.
+
+-
+
+Minimally, however, we can think of object literals as a way to **namespace** a bunch of similar datatypes. For instance, if we wanted to store some properties of a cat...
+
+-
+
+```
+const belle = {
+	fullName: 'Annabelle Lee',
+	age: 12,
+	isFluffy: true,
+	speak() {
+		return 'meow'
+	}
+}
+```
+
+In this case we have associated what would have been a few generic variable names under the **belle** namespace. This way, we are no longer in danger of scope collision.
+
+-
+
+### Example of object usecase
+
+Consider the following function.
+
+* What does it do?
+
+```js
+const validatePlayerChoice = player => {
+	const lp = player.toLowerCase();
+	const c = lp.substring(0,1);
+	if (c !== "r" && c !== "p" && c !== "s") {
+		throw new Error("INVALID INPUT: player " + c)
+	}
+	return c;
+}
+```
+
+-
+
+With comments now...
+
+```js
+const validatePlayerChoice = (player) => {
+	// remove bias for case insensitivity
+	const lp = player.toLowerCase();
+
+	// remove bias for misspelled choices
+	const c = lp.substring(0,1);
+
+	if (c !== "r" && c !== "p" && c !== "s") {
+		throw new Error("INVALID INPUT: player " + c)
+	}
+
+	// if we are here, then player is VALID and it is either
+	// "r", "p", "s"
+	return c;
+}
+```
+
+-
+
+Suppose we created an object as follows:
+
+```js
+const validPlayerChoices = {
+	'r': true,
+	'p': true,
+	's': true,
+}
+```
+
+How could we use this object to make our player validation logic easier?
+
+👇👇👇
+
+-
+
+```js
+const validPlayerChoices = {'r': true, 'p': true, 's': true,}
+
+const validatePlayerChoice = (player) => {
+	// remove bias for case insensitivity
+	const lp = player.toLowerCase();
+	// remove bias for misspelled choices
+	const c = lp.substring(0,1);
+	if (typeof validPlayerChoices[c] === "undefined") {
+		throw new Error("INVALID INPUT: player " + c)
+	}
+	// if we are here, then player is VALID and it is either
+	// "r", "p", "s"
+	return c;
+}
+```
+
+What are some benefits to this approach?
+
+-
+
+### PSET
+
+In **[Samantha](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_pset_9)**, implement the first two functions:
+
+* **getSuperHero**
+* **updateSuperHero**
+
+Work in groups of 2, 10 minutes
+
