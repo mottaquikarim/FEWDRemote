@@ -10,7 +10,7 @@
 ## Table of Contents
 Here are all the lectures for this course. This section will be updated with notes as we make our way through the curriculum.
 
-### 👉 👉 [Homework 2](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_2) 👈 👈
+### 👉 👉 [Homework 3](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_3) 👈 👈
 
 ### [Lecture 1: How do we internet, tho?](Lecture_1) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=1#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_1/class_notes)
         	
@@ -35,12 +35,12 @@ Here are all the lectures for this course. This section will be updated with not
 ### [Lecture 11: Functions](Lecture_11) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=11#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_11/class_notes)
         	
 ### [Lecture 12: Conditionals](Lecture_12) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=12#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_12/class_notes)
+        	
+### [Lecture 13: Loops and Object Literals](Lecture_13) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=13#/)
+        	
+### [Lecture 14: Document Object Model](Lecture_14) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=14#/)
 
 ✅✅✅✅
-        	
-### [Lecture 13: Objects, Dynamic Data](Lecture_13) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=13#/)
-        	
-### [Lecture 14: Objects, Dynamic Data](Lecture_14) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=14#/)
         	
 ### [Lecture 15: Objects, Dynamic Data](Lecture_15) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=15#/)
         	
@@ -54,6 +54,7 @@ Here are all the lectures for this course. This section will be updated with not
 
 ### [Final Project Specs](https://github.com/mottaquikarim/FEWDRemote/tree/master/Final_Project)
 ### [Homework 1](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_1)
+### [Homework 2](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_2)
         	
 ## Your Instructional Team
 
