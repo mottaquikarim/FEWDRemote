@@ -38,9 +38,9 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 13: Loops and Object Literals](Lecture_13) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=13#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_13/class_notes)
         	
-### [Lecture 14: Document Object Model](Lecture_14) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=14#/)
+### [Lecture 14: Document Object Model](Lecture_14) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=14#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_14/class_notes)
         	
-### [Lecture 15: Object Literals and Document Object Model](Lecture_15) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=15#/)
+### [Lecture 15: Object Literals and Document Object Model](Lecture_15) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=15#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_15/class_notes)
         	
 ### [Lecture 16: Events and jQuery](Lecture_16) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=16#/)
 
