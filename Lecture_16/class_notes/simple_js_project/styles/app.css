@@ -1,0 +1,20 @@
+.js-test {
+	background-color: black;
+	height: 30px;
+}
+
+.flex-wrap {
+	display: flex;
+}
+
+.col {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	background-color: black;
+	transition: width 0.5s;
+}
+
+.col-wide {
+	width: 100px;
+}
