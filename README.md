@@ -43,12 +43,12 @@ Here are all the lectures for this course. This section will be updated with not
 ### [Lecture 15: Object Literals and Document Object Model](Lecture_15) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=15#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_15/class_notes)
         	
 ### [Lecture 16: Events and jQuery](Lecture_16) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=16#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_16/class_notes)
+        	
+### [Lecture 17: Events, Examples, Practice](Lecture_17) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=17#/)
+        	
+### [Lecture 18: jQuery Plugins / Dynamic Apps](Lecture_18) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=18#/)
 
 ✅✅✅✅
-        	
-### [Lecture 17: UI Components / jQuery (cont'd)](Lecture_17) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=17#/)
-        	
-### [Lecture 18: UI Components / jQuery](Lecture_18) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=18#/)
 
 ## Homework and Final Project Specs
 
