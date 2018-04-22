@@ -6,6 +6,10 @@
 
 ---
 
+![bricks](https://media2.giphy.com/media/9J7tdYltWyXIY/giphy.gif)
+
+---
+
 ## Objectives
 
 * Understand how to leverage jQuery plugins into webapp
