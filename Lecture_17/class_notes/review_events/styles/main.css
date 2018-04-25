@@ -1,0 +1,10 @@
+/* CURRENTLY IN: styles/main.css */
+
+.slick-item img {
+  width: 100%;
+}
+
+
+.page-active {
+  border: 2px solid green;
+}
