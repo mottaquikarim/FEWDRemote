@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title>API(s)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+<body id="my-theme">
+
+	<div class="ui two column centered grid">
+		<div class="column">
+			<div class="ui segment">
+                <button class="ui button js-popup-opener">Popup</button>
+                <div class="js-popup popup hidden">
+                    <div class="ui segment js-popup-content popup-content">
+                        <a href="#" class="popup-close js-popup-close">
+                            <i class="window close icon"></i>
+                        </a>
+                        <p>Some content here tho</p>
+
+                        <button class="ui button js-popup-ack">Ok</button>
+                    </div>
+                </div>
+			</div><!-- ui segment -->
+		</div><!-- column -->
+	</div><!-- ui column -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='javascript/main.js'></script>
+</body>
+</html>
