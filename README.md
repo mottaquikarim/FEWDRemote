@@ -46,7 +46,7 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 17: Events, Examples, Practice](Lecture_17) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=17#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_17/class_notes)
         	
-### [Lecture 18: jQuery Plugins / Dynamic Apps](Lecture_18) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=18#/)
+### [Lecture 18: jQuery Plugins / Dynamic Apps](Lecture_18) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=18#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_18/class_notes)
 
 ✅✅✅✅
 
