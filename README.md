@@ -48,6 +48,10 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 18: jQuery Plugins / Dynamic Apps](Lecture_18) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=18#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_18/class_notes)
 
+### [Lecture 19: Concurrency / Final Projects Prep](Lecture_19) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=19#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_19/class_notes)
+        	
+### [Lecture 20: 🙌 Fin  🙌 ](Lecture_20) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=20#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_20/class_notes)
+
 ✅✅✅✅
 
 ## Homework and Final Project Specs
