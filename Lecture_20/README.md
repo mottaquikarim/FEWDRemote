@@ -105,6 +105,13 @@
 ... but ya did it anyways! Bravo.
 
 ---
+## Feedback
+
+[10 mins]
+
+Please take some time to fill out the course feedback! 
+
+---
 ## Presentations
 
 👇👇👇
@@ -121,26 +128,19 @@ As you present, answer the following:
 
 -
 
-### How I Chose Order
-
-```js
-const everyone = ['Dan', 'Alex', 'Brandy', 'Ellen', 'Ross', 'Patrick', 'Shari'];
-everyone.sort();
-console.log(everyone);
-// ["Alex", "Brandy", "Dan", "Ellen", "Patrick", "Ross", "Shari"]
-```
-
--
-
 ### Presentations
 
-* Alex
-* Brandy
-* Dan
-* Ellen
-* Patrick
-* Ross
-* Shari
+* [From Computer] Susan Cho
+* [From Computer]Abdul Gouda
+* [SSO] Francois Stiles
+* [Daniel	DiDonato](https://danieldidonato.github.io/smoothSounds/)
+* [Arohan	Dutt](https://arohand.github.io/pick_a_card/)
+* [Jennifer Flannery](https://jenflan.github.io/Level-Up/)
+* [Karla Flemming](https://kflemmm23.github.io/finalProject/#home)
+* [Burke Oppenheim](https://burkeoppenheim.github.io/99Summer/)
+* [Seja Patel](https://sejal581.github.io/FinalProject/)
+* [Renee Pawaroo](https://reneepawaroo.github.io/Ingredientswebsite/)
+* [Sarah Talbot](https://sarahtalbot.github.io/finalProject/)
 
 ---
 
