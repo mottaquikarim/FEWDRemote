@@ -10,9 +10,13 @@
 ## Table of Contents
 Here are all the lectures for this course. This section will be updated with notes as we make our way through the curriculum.
 
+<!--
 ### 👉 👉 [Homework 3](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_3) 👈 👈
+-->
 
 ### [Lecture 1: How do we internet, tho?](Lecture_1) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=1#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_1/class_notes)
+
+✅✅✅✅
         	
 ### [Lecture 2: HTML Markup](Lecture_2) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=2#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_2/class_notes)
         	
@@ -52,13 +56,12 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 20: 🙌 Fin  🙌 ](Lecture_20) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=20#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_20/class_notes)
 
-✅✅✅✅
-
 ## Homework and Final Project Specs
 
 ### [Final Project Specs](https://github.com/mottaquikarim/FEWDRemote/tree/master/Final_Project)
 ### [Homework 1](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_1)
 ### [Homework 2](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_2)
+### [Homework 3](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_3)
         	
 ## Your Instructional Team
 
