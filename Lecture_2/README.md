@@ -16,26 +16,32 @@ Thanks for comin' back, fam.
 ## To do list
 * ### [Warmup](#warmup)
 * ### [Html Basics](#html-basics)
+* ### [Semantic HTML](#semantic-html)
+
 ---
-# Warmup
+# Warm up
 
 -
 
-Let's get started with a quick exercise.
+Let's get started with a quick exercise. 
 
 -
 
 ## Exercise 1: GitHub Review
 Build me a website with some content (doesn't matter what kind of content, just some simple HTML stuff, can be about anything).
-Then, **create a new GitHub repo, commit your website content**, and finally **deploy the site**.
+Then, **create a new GitHub repo**, **commit your website content**, and finally **deploy the site.**
+
 **QUESTION**: What should you name this HTML file? Why is it important?
 
 -
 
 ## Exercise 2: Adding a second page.
 Now go ahead and add a second page to your web project.
-Then, **commit this new page** and **deploy once more to GitBot**.
+Then, **commit this new page** and **deploy once more**.
+
 **QUESTION**: How can you access this new page in the browser?
+
+
 ---
 # HTML Basics
 
@@ -45,9 +51,7 @@ Then, **commit this new page** and **deploy once more to GitBot**.
 
 -
 
-## Exercise
-Build me a simple resume webpage. You can make it a resume about yourself **or** it can be a fictional character from pop culture (ie: **Spiderman**). Do **not** worry about styling or generally how it looks, instead focus on how to **lay out** the information you'd like to present in order from most important to least important.
-As per usual, **deploy** your project once it is completed. 
+
 HTML stands for **Hyper Text Markup Language**. It is a set of annotations that help parsers (ie: search engines) **understand** the nature of the information that is present on the page.
 Think of it like an outline that describes the high level importance of different elements of your webpage.
 
@@ -171,3 +175,132 @@ All the magic happens here. All the tags the user interacts with should live in 
  <div></div>
  <span></span>
 ```
+
+-
+## Exercise 1
+
+**[Here is the project repo](https://github.com/FEWDMaterials/cookie-recipe-starter)**. 
+1. **READ** the entire readme pls.
+2. Fork this repo
+3. Download to your machine
+4. Make your changes
+5. Deploy like normal
+
+As per usual, **deploy** your project once it is completed. 
+
+-
+
+## Exercise 2
+
+Build me a simple resume webpage. You can make it a resume about yourself **or** it can be a fictional character from pop culture (ie: **Spiderman**). Do **not** worry about styling or generally how it looks, instead focus on how to **lay out** the information you'd like to present in order from most important to least important.
+As per usual, **deploy** your project once it is completed. 
+
+
+---
+# Semantic HTML
+
+-
+
+HTML5 introduces a plethora of new tags. These tags are mainly used to dictate structure and meaning to the **information** that is presented on our website.
+
+-
+
+#### Properly marking up your page
+
+![site structure](http://i.stack.imgur.com/L4qMt.png)
+
+-
+
+#### Semantic HTML5 Tags
+Here are some of the main tags that are supported.
+
+* **SECTION**: Represents a generic document or application section.
+* **HEADER**: Represents a group of introductory or navigational aids..
+* **FOOTER**: Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+* **NAV**: Represents a section of the document intended for navigation.
+
+-
+
+* **MAIN**: Defines the main content of a document.
+* **ARTICLE**: Represents an independent piece of content of a document, such as a blog entry or newspaper article
+* **ASIDE**: Represents a piece of content that is only slightly related to the rest of the page.
+
+-
+
+#### Sections VS Articles
+Use **sections** when you are outlining **chapters in a book**. 
+
+-
+
+**EXAMPLE**: 
+* A dessert cookbook could have chapters on **cake** recipes vs **pie** recipes.
+* In our dessert cookbook, **each recipe** in the **cake** section would be an **article**.
+
+-
+
+**EXAMPLE**
+Articles can go inside section tags
+```html
+<section>
+    <article>
+      <!-- first blog post -->
+    </article>
+    
+    <!-- .... more articles here ... -->
+</section>
+```
+
+-
+
+You can nest **articles** into **sections** and **sections** into **articles**.
+
+```html
+<article>
+  <section>
+     <!-- introduction -->
+  </section>
+  <section>
+     <!-- content -->
+  </section>
+  <section>
+     <!-- summary, etc -->
+  </section>
+</article>
+```
+
+-
+
+**THIS STUFF IS PARTLY SUBJECTIVE; THERE REALLY IS NO ONE RIGHT ANSWER**. 
+
+As long as we are consistent and don't violate the laws of HTML (ie: we don't put a **p** tag inside a **a** tag, or something like that). 
+
+-
+
+#### Headers, Footers, Nav, Main
+* Use headers/foorters/navs as **often as you'd like** within each section/article/aside
+* Each sectioning element (section/article/aside) can have it's own `h1` tag (some validators say this is not recommended but this is still technically allowed)
+* I usually put `nav` tags inside the `header` or `footer` pages
+
+-
+
+* **MAIN** can only be used once per page. Typically, it is used to define what the main content block of the page is. Don't have to use it though. 
+* Essentially, **the blue in the previous image could be wrapped in a main tag**
+
+-
+
+
+#### More info on sections vs articles
+**SECTION**: Used to either group different articles into different purposes or subjects, or to define the different sections of a single article.
+
+**ARTICLE**: `<article>` is related to `<section>`, but is distinctly different. Whereas `<section>` is for grouping distinct sections of content or functionality, `<article>` is for containing related individual standalone pieces of content, such as individual blog posts, videos, images or news items. 
+
+-
+
+### EXERCISES
+Here are the main problems that we will be working towards in this section of the class.
+
+-
+
+#### Exercise 1:
+Build a resume website using the **semantic** html elements we learned today. Model it after the content from the **[Spiderman](https://github.com/mottaquikarim/FEWDRemote/blob/master/Lecture_2/class_notes/theAmazingSpiderman/index.html)** website we built last lecture.
+
