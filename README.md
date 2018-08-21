@@ -10,17 +10,15 @@
 ## Table of Contents
 Here are all the lectures for this course. This section will be updated with notes as we make our way through the curriculum.
 
-<!--
-### 👉 👉 [Homework 3](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_3) 👈 👈
--->
+### 👉 👉 [Homework 1](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_1) 👈 👈
 
 ### [Lecture 1: How do we internet, tho?](Lecture_1) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=1#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_1/class_notes)
         	
 ### [Lecture 2: HTML Markup](Lecture_2) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=2#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_2/class_notes)
-
-✅✅✅✅
         	
 ### [Lecture 3: CSS](Lecture_3) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=3#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_3/class_notes)
+
+✅✅✅✅
         	
 ### [Lecture 4: CSS ](Lecture_4) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=4#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_4/class_notes)
         	
