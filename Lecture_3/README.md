@@ -1,4 +1,4 @@
-# Lecture 3: Review and CSS
+# Lecture 3: CSS
 
 -
 
@@ -20,6 +20,7 @@ Game time, fam.
 
 * Warm up
 * Semantic HTML
+* Exercise
 * Intro to CSS
 
 ---
@@ -45,18 +46,9 @@ Then, **commit this new page** and **deploy once more**.
 
 **QUESTION**: How can you access this new page in the browser?
 
--
-
-## Exercise 3: Build this
-**[Here is the project repo](https://github.com/FEWDMaterials/cookie-recipe-starter)**. 
-1. **READ** the entire readme pls.
-2. Fork this repo
-3. Download to your machine
-4. Make your changes
-5. Deploy like normal
 
 ---
-# Semantic HTML
+# Semantic HTML (Review)
 
 -
 
@@ -163,6 +155,18 @@ Here are the main problems that we will be working towards in this section of th
 #### Exercise 1:
 Build a resume website using the **semantic** html elements we learned today. Model it after the content from the **[Spiderman](https://github.com/mottaquikarim/FEWDRemote/blob/master/Lecture_2/class_notes/theAmazingSpiderman/index.html)** website we built last lecture.
 
+---
+# Exercise
+
+Given the image below, convert into semantic HTML markup
+
+-
+
+
+<div>
+<img src="https://raw.githubusercontent.com/FEWDMaterials/WendyBite_BEM/master/assignmentMaterials/WendyBite_AboutMe.png" style="width: auto; height: 100%;">
+</div>
+
 
 ---
 # Intro to CSS
@@ -239,6 +243,28 @@ You are given several "websites". However they are set up in strange configurati
 1. **WITHOUT** rearranging the files, link the proper css folders in the **`HEAD`** section
 2. If you do it right, hovering over the page in the browser will cause it to change colors
 
+---
+# Practice
+
+-
+
+Let's practice what we just learned tho
+
+-
+
+#### Problems 1 - 4
+
+-
+
+#### Log in to [Samantha](http://samantha.fewd.us/#/) First!
+Then, given the following pages, please complete the task outlined.
+
+-
+
+1. ##### [CSS Tag Selectors](http://samantha.fewd.us/#fork/mottaquikarim/CSS_Tag_Selectors) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/CSS_Tag_Selectors)
+2. ##### [CSS Class Selectors](http://samantha.fewd.us/#fork/mottaquikarim/CSS_Class_Selectors_2) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/CSS_Class_Selectors_2)
+3. ##### [CSS ID Selectors](http://samantha.fewd.us/#fork/mottaquikarim/CSS_ID_Selectors) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/CSS_ID_Selectors)
+4. ##### [Complex CSS Selectors](http://samantha.fewd.us/#fork/mottaquikarim/Complex_CSS_Selectors) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/Complex_CSS_Selectors)
 
 ---
 
