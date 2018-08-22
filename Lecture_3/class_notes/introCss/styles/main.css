@@ -1,0 +1,42 @@
+/*
+	LOL btdubs this is how we
+		comment
+		in CSS
+
+			#multilined
+*/
+
+h1 { /* this is called the CSS Selector */
+	color: red;
+	text-decoration: underline;
+	font-weight: 100;
+	font-family: Helvetica;
+    margin-left: 10px;
+}
+
+.link {
+	color: #000;
+	/*color: rgb(255,0,0);*/
+	/*color: rgba(40,80,20,0.5);*/
+	padding: 20px;
+    /* margin: 10px; */
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.active {
+	background-color: white;
+	color: black;
+	pointer-events: none;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	-webkit-transition: background-color 0.5s;
+}
+
+body:hover {
+	background-color: blue;
+}
