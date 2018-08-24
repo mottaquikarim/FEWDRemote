@@ -1,0 +1,78 @@
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+
+nav {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+a {
+	color: pink;
+}
+
+
+.active {
+	background-color: white;
+	color: red;
+	border-bottom: 2px solid red;
+	font-size: 16px;
+}
+
+.nav-link {
+	padding: 20px;
+	margin: 0;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/*
+	if space, find all the FIRST ones (nav)
+	the find all the second ones INSIDE
+		the first one and so on
+
+	specificity: 11 -- 
+		nav = 1
+		.active= 10
+*/
+nav .active {
+	border: 2px solid green;
+}
+
+/*
+	find everything with BOTH
+	a and .active
+
+	specificity: 11 --
+	 a = 1
+	 .active = 10
+*/
+a.active {
+
+}
+
+/*
+	LOL dont try this at home!
+*/
+
+#title { /* this is an id selector */
+	font-family: Helvetica;
+}
+
+
+
+
+
+
+
+
+
+
+
