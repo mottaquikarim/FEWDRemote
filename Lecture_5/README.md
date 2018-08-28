@@ -1,57 +1,27 @@
-# Lecture 5: CSS Review
+# Lecture 5: Box Model
 
 -
 
-It's practicin' time, fam
 
 ![practice makes perfect](https://media1.giphy.com/media/XIqCQx02E1U9W/giphy.gif)
 
 -
 
 ## Learning Objectives
-1. Get comfortable with CSS selectors
+1. Review HWK
+1. Get comfortable with Box Model
 
 -
 
 ## Agenda
 
-1. Review
-2. Complex CSS Selectors Problem
 3. Homework Review
 4. Box Model
 
----
-
-## Review
-👇👇👇
-
--
-
-Let's begin with some quick review
-
--
-
-**[Consider this repo](https://github.com/FEWDMaterials/RelativePathsReview)**.
-You are given several "websites". However they are set up in strange configurations! 
-
-**For Each Folder**
-1. **WITHOUT** rearranging the files, link the proper css folders in the **`HEAD`** section
-2. If you do it right, hovering over the page in the browser will cause it to change colors
 
 ---
 
-## Complex CSS Selectors Problem
-👇👇👇
-
--
-
-Let's solve this together:
-
-#### [Complex CSS Selectors](http://samantha.fewd.us/#fork/mottaquikarim/Complex_CSS_Selectors) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/Complex_CSS_Selectors)
-
----
-
-## Homework
+## Homework Review
 
 👇👇👇
 
@@ -99,4 +69,3 @@ This is a useful tool. We can use box-sizing to force the padding to be **pulled
 1. ##### [Display Inline to Block](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_Box_Model_Inline_to_block) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD_Box_Model_Inline_to_block)
 2. ##### [Display Block to Inline-Block](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_Box_Model_Inline_block_only) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD_Box_Model_Inline_block_only)
 3. ##### [Simple Layouts](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_Box_Model_Simple_Layout) | [LIVE Instructor Version](http://samantha.fewd.us/#broadcast/mottaquikarim/FEWD_Box_Model_Simple_Layout)
-
