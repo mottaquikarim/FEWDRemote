@@ -1,0 +1,23 @@
+div {
+	border: 10px solid black;
+}
+
+.width-200 {
+	width: 200px;
+}
+
+
+.width-200-border-box {
+	width: 200px;
+	box-sizing: border-box;
+}
+
+
+.box {
+	width: 33%;
+	height: 50px;
+	background-color: yellow;
+	border: 1px solid black;
+	box-sizing: border-box;
+	display: inline-block;
+}

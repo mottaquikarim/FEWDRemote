@@ -1,0 +1,18 @@
+.col {
+	min-height: 50px;
+	width: 100%;
+	background-color: pink;
+}
+
+.col-one-half {
+	background-color: yellow;
+	min-height: 100px;
+	width: 49%;
+	display: inline-block;
+	margin-right: 1%;
+}
+
+.col-last {
+	margin-right: 0;
+	margin-left: 1%;
+}
