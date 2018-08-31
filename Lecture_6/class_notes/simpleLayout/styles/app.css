@@ -1,0 +1,42 @@
+.row {
+	box-sizing: border-box;
+	background-color: lightgray;
+	border: 1px solid black;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-row {
+	justify-content: space-between;
+}
+
+.col {
+	box-sizing: border-box;
+	height: 50px;
+	background-color: yellow;
+	border: 1px solid black;
+	width: 40%;
+
+	height: 50px;
+}
+
+.col-25 {
+	width: 25%;
+}
+
+.col-50 {
+	width: 50%;
+}
+
+.col-70 {
+	width: 70%;
+}
+
+.col-30 {
+	width: 30%;
+}
+
+.col-33 {
+	width: 33.333333%;
+}
