@@ -17,6 +17,7 @@ It's practicing time, fam
 1. Review Final Project Specs
 2. Review Flexbox
 3. Practice
+4. Moar Practice
 
 
 ---
@@ -136,6 +137,39 @@ More info:
 1. ### [NYT](https://www.nyt.com)
 2. ### [Huffpost](http://www.huffingtonpost.com/)
 3. ### [Washington Post](https://www.washingtonpost.com/)
+
+---
+# Moar Practice
+👇👇👇
+
+-
+
+Please use **[this](https://github.com/FEWDMaterials/boilerplate-plain)** repo as a starting point. Each layout can be its own webpage.
+
+-
+
+
+![1](https://raw.githubusercontent.com/mottaquikarim/FEWDRemote/master/assets/flex-1.png)
+
+-
+
+![2](https://github.com/mottaquikarim/FEWDRemote/blob/master/assets/flex-2.png?raw=true)
+
+-
+
+![3](https://github.com/mottaquikarim/FEWDRemote/blob/master/assets/flex-3.png?raw=true)
+
+-
+
+![4](https://github.com/mottaquikarim/FEWDRemote/blob/master/assets/flex-4.png?raw=true)
+
+-
+
+![5](https://github.com/mottaquikarim/FEWDRemote/blob/master/assets/flex-5.png?raw=true)
+
+-
+
+![6](https://github.com/mottaquikarim/FEWDRemote/blob/master/assets/flex-grid.png?raw=true)
 
 ---
 ## HOMEWORK
