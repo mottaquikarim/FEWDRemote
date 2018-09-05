@@ -10,7 +10,7 @@
 ## Table of Contents
 Here are all the lectures for this course. This section will be updated with notes as we make our way through the curriculum.
 
-### 👉 👉 [Homework 1](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_1) 👈 👈
+### 👉 👉 [Homework 2](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_2) 👈 👈
 
 ### [Lecture 1: How do we internet, tho?](Lecture_1) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=1#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_1/class_notes)
         	
@@ -24,9 +24,9 @@ Here are all the lectures for this course. This section will be updated with not
         	
 ### [Lecture 6: Grids I](Lecture_6) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=6#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_6/class_notes)
 
-✅✅✅✅
-
 ### [Lecture 7: Grid Practice](Lecture_7) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=7#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_7/class_notes)
+
+✅✅✅✅
 
 ### [Lecture 8: Frontend Frameworks](Lecture_8) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=8#/)| [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_8/class_notes)
         	
