@@ -1,0 +1,57 @@
+/* CURRENTLY IN: styles/main.css */
+
+img {
+	width: 100%;
+}
+
+.row {
+	background-color: #eaeaea;
+	min-height: 150px;
+	/*border: 1px solid black;*/
+	box-sizing: border-box;
+}
+
+.row-no-bg {
+	background-color: white;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.full-center {
+	align-items: center;
+	justify-content: center;
+}
+
+.col {
+	background-color: #eaeaea;
+	min-height: 150px;
+	/*border: 1px solid black;*/
+	box-sizing: border-box;
+
+	padding: 20px;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+.col:last-child {
+	margin-right: 0;
+}
+
+.col-20 {
+	width: calc(20% - 5px);
+	margin: 5px;
+}
+
+.col-60 {
+	width: calc(60% - 5px);
+	margin: 5px;
+}
+
+.title {
+	font-size: 56px;
+	text-align: center;
+}

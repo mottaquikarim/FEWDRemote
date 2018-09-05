@@ -1,0 +1,70 @@
+/* CURRENTLY IN: styles/main.css */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.title {
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+	background-color: black;
+	box-sizing: border-box;
+	color: white;
+	font-weight: 900;
+	font-family: Helvetica;
+	font-size: 100px;
+	text-transform: uppercase;
+}
+
+.col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.col-7 {
+	width: calc((100% / 7) - 10px);
+	margin: 5px;
+}
+
+.date {
+	height: 150px;
+	border: 1px solid #eaeaea;
+	background-color: #eaeaea;
+	color: black;
+	transition: color 0.5s, background-color 0.5s;
+}
+
+.date:hover {
+	color: white;
+	background-color: black;
+}
+
+.diff-month {
+	background-color: white;
+}
+
+.day {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	color: black;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: Helvetica;
+}
+
+.day:after {
+	content: "day";
+}
+

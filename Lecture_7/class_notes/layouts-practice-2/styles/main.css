@@ -1,0 +1,30 @@
+/* CURRENTLY IN: styles/main.css */
+
+.row {
+	display: flex;	
+}
+
+.col {
+	background-color: #eaeaea;
+	min-height: 200px;
+	width: 100%;
+	box-sizing: border-box;
+	/*padding: 20px;*/
+	margin: 15px;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+.col:last-child {
+	margin-right: 0;
+}
+
+.col-75 {
+	width: calc(75% - 15px);
+}
+
+.col-25 {
+	width: calc(25% - 15px);
+}
