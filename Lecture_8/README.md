@@ -86,12 +86,6 @@ With mobile first, you simply add styles as needed as width increases (vs removi
 
 #### Examples
 Here are some examples of different media queries.
-<!-- * #### [Basic Example; Mobile first](http://fewd.us/howdoi/#/problem/4080)
-* #### [Basic; Desktop first](http://fewd.us/howdoi/#/problem/4081)
-* #### [AND-ing](http://fewd.us/howdoi/#/problem/4082)
-* #### [OR-ing](http://fewd.us/howdoi/#/problem/4083)
-* #### [Buckets](http://fewd.us/howdoi/#/problem/4084)
-* #### [Overriding](http://fewd.us/howdoi/#/problem/4085) -->
 
 * #### [Sample Layouts](https://github.com/FEWDMaterials/layoutPractice)
 
