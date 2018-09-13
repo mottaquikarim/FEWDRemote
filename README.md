@@ -10,7 +10,7 @@
 ## Table of Contents
 Here are all the lectures for this course. This section will be updated with notes as we make our way through the curriculum.
 
-### 👉 👉 [Homework 2](https://github.com/mottaquikarim/FEWDRemote/tree/master/Homework_2) 👈 👈
+### 👉 👉 Final Project HTML/CSS Implemented by 9/27! 👈 👈
 
 ### [Lecture 1: How do we internet, tho?](Lecture_1) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=1#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_1/class_notes)
         	
@@ -29,10 +29,10 @@ Here are all the lectures for this course. This section will be updated with not
 ### [Lecture 8: Frontend Frameworks](Lecture_8) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=8#/)| [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_8/class_notes)
         	
 ### [Lecture 9: JavaScript](Lecture_9) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=9#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_9/class_notes)
-
-✅✅✅✅
         	
 ### [Lecture 10: DataTypes](Lecture_10) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=10#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_10/class_notes)
+
+✅✅✅✅
         	
 ### [Lecture 11: Functions](Lecture_11) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=11#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_11/class_notes)
         	
