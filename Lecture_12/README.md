@@ -29,6 +29,7 @@ Welcome to Lecture 12!
 
 
 **[Functions Review II](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_JavaScript_Basics_PSET)**
+**[Default Params](http://samantha.fewd.us/#fork/mottaquikarim/NYCDA_func_default_params)**
 
 
 ---
