@@ -35,10 +35,10 @@ Here are all the lectures for this course. This section will be updated with not
 ### [Lecture 11: Functions](Lecture_11) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=11#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_11/class_notes)
         	
 ### [Lecture 12: Conditionals](Lecture_12) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=12#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_12/class_notes)
-
-✅✅✅✅
         	
 ### [Lecture 13: Loops and Object Literals](Lecture_13) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=13#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_13/class_notes)
+
+✅✅✅✅
         	
 ### [Lecture 14: Document Object Model](Lecture_14) | [Slides](https://mottaquikarim.github.io/FEWDRemote/stage/index.html?lecture=14#/) | [Class Notes](https://github.com/mottaquikarim/FEWDRemote/tree/master/Lecture_14/class_notes)
         	
