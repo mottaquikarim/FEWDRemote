@@ -13,6 +13,8 @@ Welcome to Lecture 13!
 * Review iteration using `for` and `forEach`, and introduce `while` and `do/while` loops
 * Use Object literals for solving problems in javascript
 
+**Please send me Final Project URL Thursday (to demonstrate progress**
+
 -
 
 ## Agenda
@@ -27,31 +29,15 @@ Welcome to Lecture 13!
 
 **[Conditionals Review](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_functions_pset_3)**
 
-**PS**: If you wanted to skip the first one (the `isUndefined`) that's fine - it's tricky!
+**[Conditionals w/UI](http://samantha.fewd.us/#fork/mottaquikarim/Calculate_Grade)**
 
 -
 
-**Eligibility Check Exercise**
+**Build Rock, Paper, Scissor functions**
 
-Create a blank webpage, load an **app.js** file and write a function called **`getEligibility`** that outputs a message based on a user's age. 
+* Create function that takes two arguments, player1Input and player2Input
+* Function should return `1` if player1 wins, `2` if player2 wins, 0 if tie
 
--
-
-The program must **print out only the most recent item** a person can do, *e.g.* if a user's age is 46, the message is 'You can run for president':
-
-* Under 16: 'You can go to school!'
-* 16 or Older: 'You can drive!'
-* 18 or Older: 'You can vote!'
-* 35 or Older: 'You can run for president!'
-* 62 or Older: 'You can collect social security!'
-
-
-
-**PS:** by "print out" we mean console.log the returned value of a function invoked
-
--
-
-If a user doesn't provide a valid age, tell them to do so. For now, you can hardcode the age to test your code.
 
 ---
 ## Loops
@@ -190,8 +176,6 @@ Here's another way to write the above (NB: I strongly prefer this approach
 
 ## Practice
 
-* **[Conditionals](http://samantha.fewd.us/#fork/mottaquikarim/FEWD629_functions_pset_3)** **OR** **[Conditionals (HARD MODE)](http://samantha.fewd.us/#fork/mottaquikarim/JSR-PSET_conditionals)**
-* **[Conditionals w/UI](http://samantha.fewd.us/#fork/mottaquikarim/Calculate_Grade)**
 * **[Loops](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_pset_8)** - NB: there is a **second** tab with additional problems!
 * **[Arrays](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_pset_10)**
 
@@ -489,4 +473,3 @@ In **[Samantha](http://samantha.fewd.us/#fork/mottaquikarim/FEWD_629_functions_p
 * **updateSuperHero**
 
 Work in groups of 2, 10 minutes
-
