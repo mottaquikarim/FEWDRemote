@@ -9,7 +9,6 @@
 ## Objectives
 
 * Final Project Presentations! 🎉 🎈 🎂 🍾 🎊 🙌 
-* React!
 
 ---
 
@@ -18,7 +17,6 @@
 
 1. Go you!
 2. Presentations
-3. React primer
 
 ---
 
@@ -85,21 +83,6 @@
 
 -
 
-**AJAX and APIs**
-
-* using javascript / jquery to retrieve data from 3rd party APIs
-* Promise based asynch programming
-* CRUD
-
--
-
-**Javascript in non-browser context**
-
-* running javascript in a serverside environment
-* writing terminal based scripts in nodejs
-
--
-
 ![asdfas](https://media1.giphy.com/media/j8nXhJ1fJM0wg/giphy.gif)
 
 ... but ya did it anyways! Bravo.
@@ -130,27 +113,18 @@ As you present, answer the following:
 
 ### Presentations
 
-* [From Computer] Susan Cho
-* [From Computer]Abdul Gouda
-* [SSO] Francois Stiles
-* [Daniel	DiDonato](https://danieldidonato.github.io/smoothSounds/)
-* [Arohan	Dutt](https://arohand.github.io/pick_a_card/)
-* [Jennifer Flannery](https://jenflan.github.io/Level-Up/)
-* [Karla Flemming](https://kflemmm23.github.io/finalProject/#home)
-* [Burke Oppenheim](https://burkeoppenheim.github.io/99Summer/)
-* [Seja Patel](https://sejal581.github.io/FinalProject/)
-* [Renee Pawaroo](https://reneepawaroo.github.io/Ingredientswebsite/)
-* [Sarah Talbot](https://sarahtalbot.github.io/finalProject/)
+* [Evelyn menache](https://ivimenache.github.io/FinalProject/) - [video](https://wetransfer.com/downloads/33d2f6eac96c3bb022428b1051784d2620181018211240/8c8708)
+* [Alexis Napoliello](https://anapoliello.github.io/FEWD_Final/)
+* [Connie Cheng](https://conncheng.github.io/final/)
+* [Jess Chang](https://jessschang.github.io/gentleReminders/)
+* [Michelle	See](https://seemichelle.github.io/goldenfinalproject/)
+* [Rachel Da Silva](https://rachelmds.github.io/MoodTracker/)
 
 ---
 
 ## Thanks! 
 
 You guys did a great job 👍
-
--
-
-## A HUGE thanks to Courtney
 
 ![asdfasdf](https://media.giphy.com/media/NnGGHE0muVqpO/giphy.gif)
 
@@ -159,7 +133,6 @@ You guys did a great job 👍
 ## Keep in touch!
 
 * **[Linkedin](https://www.linkedin.com/in/mottaqui-karim-5b01212a/)**
-* **[Facebook](https://www.facebook.com/taqkarim)**
-* **[IG](https://www.instagram.com/taqqui.karim/)** (🐱 🐱 🐱)
+* **[IG](https://www.instagram.com/taqqui.karim/)** 
 * **[Medium](https://medium.com/@the_taqquikarim)**
 
